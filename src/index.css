@@ -1,1 +1,43 @@
 @import "tailwindcss";
+
+@theme {
+  /* Background Color */
+  --color-Bg-Neutral-White: #fff;
+  --color-Bg-Neutral-Primary: #f8f7f7;
+  --color-Bg-Neutral-Secondary: #e9e8e8;
+  --color-Bg-Neutral-Tertiary: #d4d0d2;
+  --color-Bg-Neutral-Disabled: #c5bfc1;
+  --color-Bg-Neutral-Inverse-Primary: #f8f7f7;
+  --color-Bg-Neutral-Inverse-Secondary: #5a5054;
+  --color-Bg-Neutral-Inverse-Tertiary: #6e6368;
+  --color-Bg-Brand-Primary: #f8fce9;
+  --color-Bg-Brand-Secondary: #e2f2a6;
+  --color-Bg-Brand-Tertiary: #d3ec79;
+  --color-Bg-Semantic-Subtle: #ecfff8;
+  --color-Bg-SemanticSuccess-Bold: #0c9060;
+  --color-Bg-SemanticWarning-Subtle: #fff2e8;
+  --color-Bg-SemanticWarning-Bold: #dd6809;
+  --color-Bg-SemanticInfo-Subtle: #e5f4ff;
+  --color-Bg-SemanticInfo-Bold: #00599d;
+  /* Text Colors */
+  --color-Text-Neutral-Primary: #453c40;
+  --color-Text-Neutral-Secondary: #6e6368;
+  --color-Text-Neutral-Tertiary: #83787c;
+  --color-Text-Neutral-Disabled: #aba3a6;
+  --color-Text-NeutralInverse-Primary: #f8f7f7;
+  --color-Text-NeutralInverse-Secondary: #e9e8e8;
+  --color-Text-NeutralInverse-Tertiary: #d4d0d2;
+  --color-Text-Brand-Primary: #ff7636;
+  --color-Text-Brand-Inverse: #ffeee5;
+  --color-Text-SemanticSuccess-Primary: #0c9060;
+  --color-Text-SemanticSuccess-Inverse: #ecfff8;
+  --color-Text-SemanticWarning-Primary: #dd6809;
+  --color-Text-SemanticWarning-Inverse: #fff2e8;
+  --color-Text-SemanticError-Primary: #dd4146;
+  --color-Text-SemanticError-Inverse: #ffeeee;
+  --color-Text-SemanticInfo-Primary: #00599d;
+  --color-Text-SemanticInfo-Inverse: #e5f4ff;
+
+  /* Font Family */
+  --font-poppins: "Poppins", sans-serif;
+}
