@@ -26,7 +26,7 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div className="w-[40%] bg-gradient-to-r from-[rgba(216,212,223,0.1)] to-[rgba(197,230,76,0.50)] mr-6 rounded-sm">
+        <div className="w-[40%] bg-gradient-to-r from-[rgba(216,212,223,0.05)] to-[rgba(197,230,76,0.50)] mr-6 rounded-sm">
           <img src={bannerpic} alt="" className="pt-[53px]" />
         </div>
       </div>

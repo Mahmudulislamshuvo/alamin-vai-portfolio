@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe/AboutMe";
+import Archivement from "./components/archivement/Archivement";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/navbar/Navbar";
 
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <Banner />
       <AboutMe />
+      <Archivement />
     </div>
   );
 };
