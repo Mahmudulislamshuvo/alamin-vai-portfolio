@@ -1,6 +1,7 @@
 import AboutMe from "./components/AboutMe/AboutMe";
 import Archivement from "./components/archivement/Archivement";
 import Banner from "./components/Banner/Banner";
+import Certifications from "./components/Certifications/Certifications";
 import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <Banner />
       <AboutMe />
       <Archivement />
+      <Certifications />
     </div>
   );
 };
