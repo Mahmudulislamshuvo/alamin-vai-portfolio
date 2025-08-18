@@ -52,7 +52,7 @@ const Navbar = () => {
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <ul className="flex justify-between gap-x-[14px] px-3 py-4">
+            <ul className="flex justify-between gap-x-[14px] px-3">
               {NavData.map((item) => (
                 <li key={item.id}>
                   <a
