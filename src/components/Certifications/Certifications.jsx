@@ -67,8 +67,8 @@ const Certifications = () => {
         <div className="absolute top-1/2 -left-10 z-10">
           <button
             ref={prevRef}
-            className={`text-3xl text-Text-Brand-Primary ${
-              isBeginning ? "opacity-30 cursor-not-allowed" : ""
+            className={`text-3xl text-Text-Neutral-Primary ${
+              isBeginning ? "opacity-35 cursor-not-allowed" : ""
             }`}
             onClick={() => swiperInstance?.slidePrev()}
             disabled={isBeginning}
@@ -79,8 +79,8 @@ const Certifications = () => {
         <div className="absolute top-1/2 -right-10 z-10">
           <button
             ref={nextRef}
-            className={`text-3xl text-Text-Brand-Primary ${
-              isEnd ? "opacity-30 cursor-not-allowed" : ""
+            className={`text-3xl text-Text-Neutral-Primary ${
+              isEnd ? "opacity-35 cursor-not-allowed" : ""
             }`}
             onClick={() => swiperInstance?.slideNext()}
             disabled={isEnd}
