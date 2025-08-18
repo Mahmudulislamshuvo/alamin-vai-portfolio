@@ -2,7 +2,7 @@ import bannerpic from "../../assets/banner/banner.png";
 
 const Banner = () => {
   return (
-    <div className=" bg-Bg-Neutral-Primary">
+    <div className=" bg-Bg-Neutral-Primary pb-[120px]">
       <div className="flex items-center justify-between gap-x-10">
         <div className="py-[150px] w-[50%] pl-[160px]">
           <h1 className="font-semibold text-[124px] leading-[110%] text-Text-Neutral-Primary">

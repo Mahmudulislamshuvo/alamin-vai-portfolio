@@ -1,3 +1,4 @@
+import AboutMe from "./components/AboutMe/AboutMe";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/navbar/Navbar";
 
@@ -6,6 +7,7 @@ const App = () => {
     <div className="font-poppins">
       <Navbar />
       <Banner />
+      <AboutMe />
     </div>
   );
 };
