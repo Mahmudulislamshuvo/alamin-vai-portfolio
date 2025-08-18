@@ -5,6 +5,7 @@ import Banner from "./components/Banner/Banner";
 import Certifications from "./components/Certifications/Certifications";
 import Experiences from "./components/Experiences/Experiences";
 import Navbar from "./components/navbar/Navbar";
+import Researches from "./components/Researches/Researches";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Certifications />
       <Awards />
       <Experiences />
+      <Researches />
     </div>
   );
 };
