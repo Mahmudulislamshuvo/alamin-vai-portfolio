@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import cerificate1 from "../../assets/certifications/Rectangle5.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import PageHeader from "../CommonCoponents/PageHeader";
 
 const Certifications = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -54,13 +55,11 @@ const Certifications = () => {
   return (
     <div className="container mx-auto relative">
       <div className="bg-Bg-Brand-Tertiary px-[40px] md:px-[100px] py-[80px] rounded-xl">
-        <div className="mb-12 text-center">
-          <h5 className="font-semibold text-Text-Brand-Primary">
-            PROOF OF QUALIFICATION
-          </h5>
-          <h3 className="font-semibold text-[40px] md:text-[60px] text-Text-Neutral-Primary">
-            Certifications
-          </h3>
+        <div className="mb-12 ">
+          <PageHeader
+            title={"PROOF OF QUALIFICATION"}
+            header={"Certifications"}
+          />
         </div>
 
         {/* Custom navigation buttons */}
