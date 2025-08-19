@@ -13,12 +13,14 @@
   --color-Bg-Brand-Primary: #f8fce9;
   --color-Bg-Brand-Secondary: #e2f2a6;
   --color-Bg-Brand-Tertiary: #d3ec79;
+  --color-Bg-Brand-Dark: #242d06;
   --color-Bg-Semantic-Subtle: #ecfff8;
   --color-Bg-SemanticSuccess-Bold: #0c9060;
   --color-Bg-SemanticWarning-Subtle: #fff2e8;
   --color-Bg-SemanticWarning-Bold: #dd6809;
   --color-Bg-SemanticInfo-Subtle: #e5f4ff;
   --color-Bg-SemanticInfo-Bold: #00599d;
+
   /* Text Colors */
   --color-Text-Neutral-Primary: #453c40;
   --color-Text-Neutral-Secondary: #6e6368;

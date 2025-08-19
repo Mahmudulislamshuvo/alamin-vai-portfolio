@@ -6,6 +6,7 @@ import Certifications from "./components/Certifications/Certifications";
 import ContactForm from "./components/ContactUs/ContactForm";
 import Education from "./components/Education/Education";
 import Experiences from "./components/Experiences/Experiences";
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Researches from "./components/Researches/Researches";
@@ -26,6 +27,7 @@ const App = () => {
       <SkillsAndTools />
       <Portfolio />
       <ContactForm />
+      <Footer />
     </div>
   );
 };
