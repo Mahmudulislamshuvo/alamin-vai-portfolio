@@ -1,0 +1,106 @@
+import { FaCircle } from "react-icons/fa";
+import image from "../../assets/education/Rectangle.png";
+
+const VerticalTimeline = () => {
+  const timelineItems = [
+    {
+      date: "2024 - 2025",
+      title: "Ph.D. in Computer Science",
+      subtitle: "Stanford University",
+      description: "Advanced Machine Learning Techniques for Medical Imaging",
+    },
+    {
+      date: "2024 - 2025",
+      title: "Ph.D. in Computer Science",
+      subtitle: "Stanford University",
+      description: "Advanced Machine Learning Techniques for Medical Imaging",
+    },
+    {
+      date: "2024 - 2025",
+      title: "Ph.D. in Computer Science",
+      subtitle: "Stanford University",
+      description: "Advanced Machine Learning Techniques for Medical Imaging",
+    },
+    {
+      date: "2024 - 2025",
+      title: "Ph.D. in Computer Science",
+      subtitle: "Stanford University",
+      description: "Advanced Machine Learning Techniques for Medical Imaging",
+    },
+  ];
+
+  return (
+    <section className="relative">
+      {/* Vertical line */}
+      <div className="pointer-events-none absolute left-5 md:left-1/2 top-0 h-full w-0.5 bg-Bg-Neutral-Tertiary md:-translate-x-1/2 z-0"></div>
+
+      <div className="space-y-10 relative z-10">
+        {timelineItems.map((item, index) => (
+          <div
+            key={index}
+            className="relative flex flex-col md:flex-row md:items-center"
+          >
+            {/* Dot (mobile: left rail, desktop: center) */}
+            <div className="absolute left-5 md:left-1/2 top-1 md:top-0 -translate-x-1/2 z-20">
+              <FaCircle className="w-5 h-5 text-Text-Neutral-Tertiary" />
+            </div>
+
+            {/* Date (mobile: dot-এর ডান পাশে) */}
+            <div className="md:hidden mb-2 pl-10">
+              <span className="text-xs font-medium text-Text-Neutral-Tertiary">
+                {item.date}
+              </span>
+            </div>
+
+            {/* Date (desktop: বিপরীত পাশে) */}
+            <div
+              className={`hidden md:flex w-5/12 items-center ${
+                index % 2 === 0
+                  ? "justify-end pr-6"
+                  : "order-2 justify-start pl-6"
+              }`}
+            >
+              <span
+                className={`font-medium text-Text-Neutral-Tertiary text-xl ${
+                  index % 2 === 0 ? "mr-1" : "ml-1"
+                }`}
+              >
+                {item.date}
+              </span>
+            </div>
+
+            {/* Content Card */}
+            <div
+              className={`ml-10 md:ml-0 w-full md:w-5/12 bg-Bg-Brand-Secondary rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg ${
+                index % 2 === 0
+                  ? "md:ml-auto md:pl-6"
+                  : "md:mr-auto md:pr-6 order-1"
+              }`}
+            >
+              <div className="p-5 flex gap-4">
+                <img
+                  src={image}
+                  alt="Logo"
+                  className="h-[72px] w-[72px] md:h-[82px] md:w-[82px] object-cover rounded-lg"
+                />
+                <div>
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900">
+                    {item.title}
+                  </h3>
+                  <h5 className="text-sm md:text-base text-gray-700 font-medium">
+                    {item.subtitle}
+                  </h5>
+                  <p className="text-sm md:text-base text-gray-600 mt-1">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default VerticalTimeline;

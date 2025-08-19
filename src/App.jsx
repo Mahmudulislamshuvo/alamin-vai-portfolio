@@ -3,6 +3,7 @@ import Archivement from "./components/archivement/Archivement";
 import Awards from "./components/Awards/Awards";
 import Banner from "./components/Banner/Banner";
 import Certifications from "./components/Certifications/Certifications";
+import Education from "./components/Education/Education";
 import Experiences from "./components/Experiences/Experiences";
 import Navbar from "./components/navbar/Navbar";
 import Researches from "./components/Researches/Researches";
@@ -18,6 +19,7 @@ const App = () => {
       <Awards />
       <Experiences />
       <Researches />
+      <Education />
     </div>
   );
 };
