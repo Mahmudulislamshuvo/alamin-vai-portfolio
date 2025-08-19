@@ -7,6 +7,7 @@ import Education from "./components/Education/Education";
 import Experiences from "./components/Experiences/Experiences";
 import Navbar from "./components/navbar/Navbar";
 import Researches from "./components/Researches/Researches";
+import SkillsAndTools from "./components/Skills/SkillsAndTools";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Experiences />
       <Researches />
       <Education />
+      <SkillsAndTools />
     </div>
   );
 };
