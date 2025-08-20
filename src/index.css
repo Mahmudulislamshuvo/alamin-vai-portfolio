@@ -39,6 +39,7 @@
   --color-Text-SemanticError-Inverse: #ffeeee;
   --color-Text-SemanticInfo-Primary: #00599d;
   --color-Text-SemanticInfo-Inverse: #e5f4ff;
+  --breakpoint-xs: 30rem;
 
   /* Font Family */
   --font-poppins: "Poppins", sans-serif;
