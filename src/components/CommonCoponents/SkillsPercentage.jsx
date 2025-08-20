@@ -1,6 +1,6 @@
 const SkillsPercentage = ({ skills }) => {
   return (
-    <div className="border border-Text-Neutral-Secondary p-6 rounded-lg inline-block">
+    <div className="border border-Text-Neutral-Secondary p-6 rounded-lg inline-block max-xs:bg-Bg-Neutral-White max-xs:border-none">
       <h4 className="text-xl font-semibold md:text-3xl text-Text-Neutral-Primary pb-5">
         Programming
       </h4>
