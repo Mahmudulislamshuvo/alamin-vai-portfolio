@@ -8,7 +8,9 @@ const StatsCard = ({ width, value, label }) => {
       : "basis-auto";
 
   return (
-    <div className={`${widthClass} bg-Bg-Brand-Primary px-6 py-5 text-center`}>
+    <div
+      className={`${widthClass} bg-Bg-Brand-Primary max-xs:bg-Bg-Neutral-White rounded-lg px-6 py-5 text-center`}
+    >
       <span className="text-6xl font-bold text-orange-500 mb-2">{value}</span>
       <p className="text-gray-600 font-medium text-lg">{label}</p>
     </div>
