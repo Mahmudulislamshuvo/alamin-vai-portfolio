@@ -136,9 +136,9 @@ const Certifications = () => {
           ))}
         </Swiper>
       </div>
-      {/* For mobile only */}
+      {/* ===============For mobile only ============*/}
       <div className="block sm:hidden max-xs:p-3">
-        <div className="mb-12">
+        <div className="mb-12 max-xs:mb-6">
           <PageHeader
             title={"PROOF OF QUALIFICATION"}
             header={"Certifications"}

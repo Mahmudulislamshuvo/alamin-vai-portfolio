@@ -8,11 +8,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
 const Awards = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
+  const [showAll, setShowAll] = useState(false);
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -52,14 +54,17 @@ const Awards = () => {
     },
   ];
 
+  const displayedCerts = showAll ? certifications : certifications.slice(0, 3);
+
   return (
-    <div className="bg-Bg-Neutral-White sm:bg-Bg-Neutral-Secondary md:bg-Bg-Neutral-Secondary lg:bg-Bg-Neutral-White ">
+    <div className="bg-Bg-Neutral-White sm:bg-Bg-Neutral-Secondary md:bg-Bg-Neutral-Secondary lg:bg-Bg-Neutral-White max-xs:bg-Bg-Neutral-Secondary ">
       <div className="container mx-auto">
-        <div className="py-[120px] relative">
-          <div className="pb-[80px]">
+        <div className="py-[120px] relative max-xs:py-9">
+          <div className="pb-[80px] max-xs:px-3 max-xs:pb-6">
             <PageHeader title={"HONORS & ACHIEVEMENTS"} header={"Awards"} />
           </div>
-          <div>
+          {/* For desktop and others Devices */}
+          <div className="max-xs:hidden">
             <div className="absolute top-1/2 -left-10 z-10">
               <button
                 ref={prevRef}
@@ -128,6 +133,48 @@ const Awards = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+          </div>
+          {/* =========For mobile device only========== */}
+          <div className="sm:hidden max-xs:p-3 flex flex-col gap-y-3">
+            {displayedCerts.map((cert) => (
+              <div key={cert.id}>
+                <div className="bg-white rounded-xl border border-[#E9E8E8]">
+                  <img
+                    src={cert.img}
+                    alt={cert.title}
+                    className="w-full h-70 object-cover rounded-lg"
+                  />
+                  <div className="px-6">
+                    <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4 pb-2">
+                      {cert.title}
+                    </h4>
+                    <div className="flex justify-between items-center pb-6">
+                      <p className="flex items-center gap-2 text-base text-Text-Neutral-Tertiary">
+                        {cert.desc}
+                        <span className="border-l h-5"></span>
+                        {cert.year}
+                      </p>
+                      <button className="text-base text-Text-Brand-Primary">
+                        {cert.button}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+
+            {/* Toggle Button */}
+            {certifications.length > 3 && (
+              <button
+                onClick={() => setShowAll(!showAll)}
+                className="flex items-center justify-center gap-2 text-Text-Brand-Primary text-lg"
+              >
+                {showAll ? "Show Less" : "View All"}
+                <span>
+                  {showAll ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
+                </span>
+              </button>
+            )}
           </div>
         </div>
       </div>
