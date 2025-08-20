@@ -71,7 +71,7 @@ const VerticalTimeline = () => {
 
             {/* Content Card */}
             <div
-              className={`ml-10 md:ml-0 w-full md:w-5/12 bg-Bg-Brand-Secondary rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg ${
+              className={`ml-10 md:ml-0 w-full md:w-5/12 bg-Bg-Brand-Secondary rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg max-xs:ml-8 max-xs:w-[90%] ${
                 index % 2 === 0
                   ? "md:ml-auto md:pl-6"
                   : "md:mr-auto md:pr-6 order-1"
