@@ -3,7 +3,7 @@ import bannerpic from "../../assets/banner/banner.png";
 const Banner = () => {
   return (
     <div className="bg-Bg-Neutral-Primary pb-[120px] max-xs:py-5 ">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-x-10">
+      <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-x-10">
         <div className="py-[150px] w-full lg:w-[50%] px-6 max-xs:py-5 max-xs:px-4 lg:pl-[160px]">
           <h1 className="font-semibold text-[40px] sm:text-[64px] lg:text-[124px] leading-[110%] text-Text-Neutral-Primary">
             John Anderson
@@ -26,7 +26,7 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div className="w-full lg:w-[40%] bg-gradient-to-r from-[rgba(216,212,223,0.05)] to-[rgba(197,230,76,0.50)] rounded-sm">
+        <div className="w-full lg:w-[40%] bg-gradient-to-r from-[rgba(216,212,223,0.05)] to-[rgba(197,230,76,0.50)] rounded-sm pt-11">
           <img
             src={bannerpic}
             alt=""
