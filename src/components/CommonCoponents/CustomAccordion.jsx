@@ -10,7 +10,7 @@ const CustomAccordion = ({ experienceData = [] }) => {
   };
 
   return (
-    <div className="w-full mx-auto py-2 sm:py-1">
+    <div className="w-full mx-auto py-2 sm:py-0">
       {experienceData.map((project) => (
         <div
           key={project.id}
@@ -22,19 +22,22 @@ const CustomAccordion = ({ experienceData = [] }) => {
               onClick={() => handleOpen(project.id)}
             >
               <div className="flex flex-col md:flex-row gap-6 items-start justify-between w-full">
-                <div className="flex w-full justify-between items-center gap-x-5">
+                <div className="flex w-full justify-between items-center gap-x-5 max-xs:gap-x-1">
                   <div className="flex items-center gap-x-4">
                     <img src={image} alt={image} />
                     <div className="flex flex-col justify-start items-start">
-                      <h3 className="text-3xl font-semibold text-Text-Neutral-Primary">
+                      <h3 className="text-3xl font-semibold text-Text-Neutral-Primary max-xs:text-lg max-xs:font-medium">
                         {project.title}
                       </h3>
-                      <p className="text-xl text-Text-Neutral-Tertiary">
+                      <p className="text-xl text-Text-Neutral-Tertiary max-xs:text-base max-xs:font-medium">
                         {project.subtitle}
                       </p>
+                      <span className="text-sm font-medium text-gray-500 tracking-wide text-start pr-5 max-xs:text-base max-xs:font-normal sm:hidden">
+                        {project.period}
+                      </span>
                     </div>
                   </div>
-                  <span className="text-sm font-medium text-gray-500 tracking-wide text-start pr-5">
+                  <span className="text-sm font-medium text-gray-500 tracking-wide text-start pr-5 max-xs:text-base max-xs:font-normal max-xs:hidden">
                     {project.period}
                   </span>
                 </div>
