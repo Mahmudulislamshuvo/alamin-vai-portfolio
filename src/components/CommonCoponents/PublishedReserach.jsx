@@ -10,7 +10,7 @@ const PublishedReserach = ({
 }) => {
   return (
     <>
-      <div className="border border-Bg-Neutral-Secondary w-[49%] p-5 rounded-lg">
+      <div className="border border-Bg-Neutral-Secondary w-[49%] p-5 rounded-lg max-xs:w-full max-xs:p-3 max-xs:bg-Bg-Neutral-White">
         <div className="border-b border-Bg-Neutral-Secondary py-4">
           <img src={image} alt={image} />
           <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4">
@@ -18,23 +18,51 @@ const PublishedReserach = ({
           </h4>
           <p className="text-Text-Neutral-Primary text-base pt-3">{des}</p>
         </div>
-        <p className="text-Text-Neutral-Tertiary pt-4">
-          <span className="text-lg font-medium text-Text-Neutral-Tertiary">
-            Published on:
-          </span>
-          {publish}
-        </p>
-        <div className="flex justify-between pt-2">
-          <div className="text-Text-Neutral-Tertiary flex gap-x-4">
-            <span>{year}</span> <span>{papername}</span>
-            <span>
-              <span>DOI:</span>
-              <a target="__blank" href={`https://doi.org/${link}`}>
-                {link}
-              </a>
+        {/* For Desktop and others device */}
+        <div className="max-xs:hidden">
+          <p className="text-Text-Neutral-Tertiary pt-4">
+            <span className="text-lg font-medium text-Text-Neutral-Tertiary">
+              Published on:
             </span>
+            {publish}
+          </p>
+          <div className="flex justify-between pt-2">
+            <div className="text-Text-Neutral-Tertiary flex gap-x-4">
+              <span>{year}</span>{" "}
+              <span className="text-Text-Neutral-Tertiary">{papername}</span>
+              <span>
+                <span>DOI:</span>
+                <a target="__blank" href={`https://doi.org/${link}`}>
+                  {link}
+                </a>
+              </span>
+            </div>
+            <button className="text-Text-Brand-Primary">{btnName}</button>
           </div>
-          <button className="text-Text-Brand-Primary">{btnName}</button>
+        </div>
+        {/* For Mobile device only */}
+        <div className="sm:hidden">
+          <p className="text-Text-Neutral-Tertiary pt-4">
+            <span className="text-lg font-medium text-Text-Neutral-Tertiary">
+              Published on:
+            </span>
+            {publish}
+          </p>
+          <div className="pt-2">
+            <div className="text-Text-Neutral-Tertiary flex gap-x-4">
+              <span className="border-r border-Text-Neutral-Secondary pr-2">
+                <span>DOI:</span>
+                <a target="__blank" href={`https://doi.org/${link}`}>
+                  {link}
+                </a>
+              </span>
+              <span>{year}</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-Text-Neutral-Tertiary">{papername}</span>
+              <button className="text-Text-Brand-Primary">{btnName}</button>
+            </div>
+          </div>
         </div>
       </div>
     </>
