@@ -1,7 +1,7 @@
 # Portfolio Pro
 
-![DesktopBanner](public\DesktopBanner.png)
-![MobileBanner](public\MobileBanner.png)
+![DesktopBanner](./public/DesktopBanner.png)
+![MobileBanner](./public/MobileBanner.png)
 
 ## Introduction
 
@@ -42,10 +42,10 @@ To get the project up and running locally, follow these simple steps:
 
 ## Screenshots
 
-![Screenshot 1](public\Screenshot1.png)
-![Screenshot 2](public\Screenshot2.png)
-![Screenshot 3](public\Screenshot3.png)
-![Screenshot 4](public\Screenshot4.png)
+![Screenshot 1](./public/Screenshot1.png)
+![Screenshot 2](./public/Screenshot2.png)
+![Screenshot 3](./public/Screenshot3.png)
+![Screenshot 4](./public/Screenshot4.png)
 
 ## Contact
 
