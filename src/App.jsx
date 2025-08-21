@@ -19,9 +19,9 @@ const App = () => {
       <Banner />
       <AboutMe />
       <Archivement />
-      <Certifications />
-      <Awards />
       <Experiences />
+      <Awards />
+      <Certifications />
       <Researches />
       <Education />
       <SkillsAndTools />
