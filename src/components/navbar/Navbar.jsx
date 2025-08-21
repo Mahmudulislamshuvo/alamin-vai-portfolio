@@ -18,7 +18,9 @@ const Navbar = () => {
     <nav className="bg-Bg-Neutral-Primary">
       <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-4 sm:px-4">
         {/* Brand */}
-        <div className="text-2xl text-Text-Neutral-Primary">John Anderson</div>
+        <div className="text-2xl text-Text-Neutral-Primary md:mr-10">
+          John Anderson
+        </div>
 
         {/* Hamburger → only for sm */}
         <div className="flex items-center md:hidden">
@@ -46,9 +48,10 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Menu for md and above */}
-        <div className="hidden md:flex md:items-center md:space-x-6">
-          <ul className="flex gap-x-6">
+        {/* Menu + Button for md and above */}
+        <div className="hidden md:flex md:flex-1 md:items-center md:justify-between">
+          {/* Menu in center */}
+          <ul className="flex gap-x-6 mx-auto">
             {NavData.map((item) => (
               <li key={item.id}>
                 <a
@@ -60,10 +63,11 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          {/* Button always visible from md and up */}
+
+          {/* Button on right */}
           <button
             type="button"
-            className="hidden md:block text-white font-medium rounded-[100px] text-[16px] px-6 py-3 text-center bg-Text-Brand-Primary"
+            className="text-white font-medium rounded-[100px] text-[16px] px-6 py-3 text-center bg-Text-Brand-Primary"
           >
             Download CV
           </button>
