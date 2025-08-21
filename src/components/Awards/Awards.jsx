@@ -61,7 +61,10 @@ const Awards = () => {
       <div className="container mx-auto">
         <div className="py-[120px] relative max-xs:py-9">
           <div className="pb-[80px] max-xs:px-3 max-xs:pb-6">
-            <PageHeader title={"HONORS & ACHIEVEMENTS"} header={"Awards"} />
+            <PageHeader
+              title={"HONORS & ACHIEVEMENTS"}
+              header={"Awards and Membership"}
+            />
           </div>
           {/* For desktop and others Devices */}
           <div className="max-xs:hidden">

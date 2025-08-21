@@ -27,11 +27,13 @@ const Banner = () => {
           </div>
         </div>
         <div className="w-full lg:w-[40%] bg-gradient-to-r from-[rgba(216,212,223,0.05)] to-[rgba(197,230,76,0.50)] rounded-sm pt-11">
-          <img
-            src={bannerpic}
-            alt=""
-            className="pt-[30px] sm:pt-[20px] mx-auto"
-          />
+          <div className="pt-5">
+            <img
+              src={bannerpic}
+              alt=""
+              className="pt-[30px] sm:pt-[20px] mx-auto"
+            />
+          </div>
         </div>
       </div>
     </div>
