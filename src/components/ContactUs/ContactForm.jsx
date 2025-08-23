@@ -9,12 +9,12 @@ const ContactForm = () => {
   return (
     <div className="py-[120px] max-xs:py-9 max-xs:bg-Bg-Neutral-Secondary">
       <div className="container mx-auto max-xs:p-3">
-        <div className="pb-[80px] max-xs:pb-6">
+        <div className="pb-[80px] max-xs:pb-6 sm:pb-6">
           <PageHeader title={"LET'S CONNECT"} header={"Contact"} />
         </div>
 
         {/* Right side*/}
-        <div className="w-full border border-Bg-Neutral-Primary p-6 rounded-xl max-xs:bg-Bg-Neutral-White">
+        <div className="w-full border border-Bg-Neutral-Primary p-6 rounded-xl max-xs:bg-Bg-Neutral-White sm:p-0">
           <div className="pb-5">
             <h3 className="text-xl font-semibold text-Text-Neutral-Primary">
               John Anderson
