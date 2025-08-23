@@ -7,16 +7,16 @@ import StatsCard from "../CommonCoponents/StatsCard";
 
 const Archivement = () => {
   return (
-    <div className="bg-Bg-Neutral-White max-xs:bg-Bg-Neutral-Secondary md:bg-Bg-Neutral-White py-[120px] max-xs:py-9">
-      <div className="container mx-auto max-xs:p-3">
+    <div className="bg-Bg-Neutral-White max-xs:bg-Bg-Neutral-Secondary sm:bg-Bg-Neutral-Secondary md:bg-Bg-Neutral-White py-[120px] max-xs:py-9 sm:py-5">
+      <div className="container mx-auto max-xs:p-3 sm:p-5">
         <div className="pb-[80px] max-xs:pb-6">
           <PageHeader
             title={"NOTABLE ACHIEVEMENTS"}
             header={"Key Achievements"}
           />
         </div>
-        <div className="w-full flex items-center justify-between max-xs:block ">
-          <div className="w-[49%] flex flex-col gap-y-4 max-xs:gap-y-3 max-xs:py-5 max-xs:w-full max-xs:bg-Bg-Neutral-White  max-xs:rounded-xl">
+        <div className="w-full flex items-center justify-between max-xs:block sm:block">
+          <div className="w-[49%] flex flex-col gap-y-4 max-xs:gap-y-3 max-xs:py-5 max-xs:w-full max-xs:bg-Bg-Neutral-White  max-xs:rounded-xl sm:w-full sm:bg-Bg-Neutral-White sm:rounded-xl sm:gap-y-3">
             <ArchivementsMedal
               icon={medal1}
               title={"Best Research Paper"}
@@ -33,7 +33,7 @@ const Archivement = () => {
               des={"International Conference on AI, 2023"}
             />
           </div>
-          <div className="w-[49%] max-xs:mt-5 max-xs:w-full">
+          <div className="w-[49%] max-xs:mt-5 max-xs:w-full sm:w-full sm:mt-5">
             <div className="flex flex-wrap gap-4">
               <StatsCard
                 width="1/2"

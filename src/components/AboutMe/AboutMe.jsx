@@ -5,10 +5,10 @@ const AboutMe = () => {
     <div className="bg-white">
       <div className="container mx-auto">
         {/* Parent container */}
-        <div className="px-[160px] py-[160px] max-[479px]:p-3 bg-Bg-Brand-Tertiary flex flex-col lg:flex-row items-start gap-8 rounded-2xl max-sm:p-3">
+        <div className="px-[160px] py-[160px] max-[479px]:p-3 bg-Bg-Brand-Tertiary flex flex-col lg:flex-row items-start gap-8 rounded-2xl max-sm:p-3 sm:px-5 sm:py-5">
           {/* About Me Content */}
           <div className="w-full lg:w-[48%]">
-            <div className="pb-[80px] max-[479px]:pb-6 max-sm:pb-6">
+            <div className="pb-[80px] max-[479px]:pb-6 sm:pb-6">
               <PageHeader title={"GET TO KNOW ME"} header={"About Me"} />
             </div>
             <div className="flex flex-col gap-4">

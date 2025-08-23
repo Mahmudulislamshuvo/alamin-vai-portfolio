@@ -1,5 +1,4 @@
 import PageHeader from "../CommonCoponents/PageHeader";
-import cerificate1 from "../../assets/certifications/Rectangle5.png";
 import { useRef, useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,6 +8,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import cerificate1 from "../../assets/awardsMembership/PMI-Member1.jpg";
+import cerificate2 from "../../assets/awardsMembership/IIBA-Membership2.jpg";
+import cerificate3 from "../../assets/awardsMembership/IEEE-MEMBERSHIP3.jpg";
+import cerificate4 from "../../assets/awardsMembership/IEEE-COMPUTER-SOCITY-MEMBERSHIP4.jpg";
+import cerificate5 from "../../assets/awardsMembership/IEEE-Young-Professional5.jpg";
 
 const Awards = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -30,7 +34,7 @@ const Awards = () => {
     },
     {
       id: 2,
-      img: cerificate1,
+      img: cerificate2,
       title: "Full Stack Developer",
       desc: "Google",
       year: "2024",
@@ -38,7 +42,7 @@ const Awards = () => {
     },
     {
       id: 3,
-      img: cerificate1,
+      img: cerificate3,
       title: "Full Stack Developer",
       desc: "Google",
       year: "2024",
@@ -46,7 +50,15 @@ const Awards = () => {
     },
     {
       id: 4,
-      img: cerificate1,
+      img: cerificate4,
+      title: "Full Stack Developer",
+      desc: "Google",
+      year: "2024",
+      button: "View",
+    },
+    {
+      id: 4,
+      img: cerificate5,
       title: "Full Stack Developer",
       desc: "Google",
       year: "2024",

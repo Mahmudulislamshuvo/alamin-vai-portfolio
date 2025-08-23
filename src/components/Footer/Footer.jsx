@@ -61,9 +61,21 @@ const Footer = () => {
               New York, USA
             </li>
             <li className="flex items-center gap-x-4">
-              <TiSocialLinkedinCircular />
-              <FaGoogleScholar />
-              <LiaOrcid />
+              <a
+                href="https://www.linkedin.com/in/md-al-amin-b50487366/"
+                target="__blank"
+              >
+                <TiSocialLinkedinCircular />
+              </a>
+              <a
+                href="https://scholar.google.com/citations?user=5f7cSQQAAAAJ&hl=en"
+                target="__blank"
+              >
+                <FaGoogleScholar />
+              </a>
+              <a href="https://orcid.org/0009-0008-8981-9667" target="__blank">
+                <LiaOrcid />
+              </a>
             </li>
           </ul>
         </div>
