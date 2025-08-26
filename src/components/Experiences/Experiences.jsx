@@ -5,10 +5,10 @@ const Experiences = () => {
   const projects = [
     {
       id: 1,
-      title: "IT Administrator",
-      subtitle: "Superior Hvac",
+      title: "Business Analyst",
+      subtitle: "Jay Apparel Group LLC",
       location: "New York",
-      period: "2024 - Present",
+      period: "July 2025 - Present",
       orderlist: [
         {
           id: 1,
@@ -58,10 +58,10 @@ const Experiences = () => {
     },
     {
       id: 2,
-      title: "SQA Engineer",
-      subtitle: "BizMotion Limited",
-      location: "Dhaka",
-      period: "2021 - 2023",
+      title: "Senior Merchandiser",
+      subtitle: "Uni Gears Ltd. (Gears Group)",
+      location: "Dhaka , Bangladesh",
+      period: "Aug 2018 - Aug 2023",
       orderlist: [
         {
           id: 1,

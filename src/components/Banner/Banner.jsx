@@ -6,7 +6,9 @@ const Banner = () => {
       <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-x-10">
         <div className="py-[150px] w-full sm:py-10 lg:w-[50%] px-6 max-xs:py-5 max-xs:px-4 lg:pl-[160px]">
           <h1 className="font-semibold text-[40px] sm:text-[64px] lg:text-[124px] leading-[110%] text-Text-Neutral-Primary">
-            John Anderson
+            Md
+            <br />
+            Al Amin
           </h1>
           <h5 className="text-lg sm:text-xl lg:text-2xl text-Text-Neutral-Primary">
             AI Research Scientist | Machine Learning Expert
