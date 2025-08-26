@@ -10,7 +10,7 @@ const PublishedReserach = ({
 }) => {
   return (
     <>
-      <div className="border border-Bg-Neutral-Secondary w-[49%] p-5 rounded-lg max-xs:w-full max-xs:p-3 max-xs:bg-Bg-Neutral-White sm:w-full">
+      <div className="border border-Bg-Neutral-Secondary w-[49%] p-5 rounded-lg max-xs:w-full max-xs:p-3 max-xs:bg-Bg-Neutral-White max-sm:w-full">
         <div className="border-b border-Bg-Neutral-Secondary py-4">
           <img src={image} alt={image} />
           <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4">

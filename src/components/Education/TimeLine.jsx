@@ -5,26 +5,20 @@ const VerticalTimeline = () => {
   const timelineItems = [
     {
       date: "2024 - 2025",
-      title: "Ph.D. in Computer Science",
-      subtitle: "Stanford University",
+      title: "Master of Science in Information Technology",
+      subtitle: "St. Francis College, Brooklyn",
       description: "Advanced Machine Learning Techniques for Medical Imaging",
     },
     {
-      date: "2024 - 2025",
-      title: "Ph.D. in Computer Science",
-      subtitle: "Stanford University",
+      date: "2020 - 2023",
+      title: "MBA in Textile Engineering Management",
+      subtitle: "Bangladesh University of Textiles, Bangladesh",
       description: "Advanced Machine Learning Techniques for Medical Imaging",
     },
     {
-      date: "2024 - 2025",
-      title: "Ph.D. in Computer Science",
-      subtitle: "Stanford University",
-      description: "Advanced Machine Learning Techniques for Medical Imaging",
-    },
-    {
-      date: "2024 - 2025",
-      title: "Ph.D. in Computer Science",
-      subtitle: "Stanford University",
+      date: "2014 - 2018",
+      title: "Bachelor of Science in Textile Engineering",
+      subtitle: "Daffodil International University, Bangladesh",
       description: "Advanced Machine Learning Techniques for Medical Imaging",
     },
   ];

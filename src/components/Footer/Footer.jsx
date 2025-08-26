@@ -8,17 +8,17 @@ const Footer = () => {
     <div
       className="px-[100px] py-[80px] bg-Bg-Brand-Dark flex justify-between items-start gap-x-15 
       max-xs:p-3 max-xs:flex-col max-xs:gap-x-0 
-      sm:px-6 sm:py-10 sm:flex-col sm:gap-y-10"
+      sm:px-20 sm:py-10 sm:flex-col sm:gap-y-10"
     >
       {/* Left side */}
-      <div className="w-[40%] max-xs:w-full sm:w-full">
+      <div className="w-[40%] max-xs:w-full max-sm:w-full">
         <h3
           className="text-4xl font-semibold text-Bg-Neutral-White pb-5 
           max-xs:pb-3 sm:text-3xl sm:pb-4"
         >
           John Anderson
         </h3>
-        <p className="text-Text-Brand-Inverse sm:text-base">
+        <p className="text-Text-Brand-Inverse max-sm:text-base">
           Dedicated researcher specializing in artificial intelligence and
           machine learning, with a focus on natural language processing and
           computer vision. Passionate about advancing AI technology through

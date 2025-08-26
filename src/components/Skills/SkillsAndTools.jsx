@@ -18,7 +18,7 @@ const SkillsAndTools = () => {
             header={"Skills & Tools"}
           />
         </div>
-        <div className="flex gap-x-11 max-xs:gap-y-3 max-xs:gap-x-0 max-xs:flex-col sm:flex-col sm:gap-y-4">
+        <div className="flex gap-x-11 max-xs:gap-y-3 max-xs:gap-x-0 max-xs:flex-col max-sm:flex-col sm:gap-y-4">
           <SkillsPercentage skills={skills1} />
           <SkillsPercentage skills={skills1} />
           <SkillsPercentage skills={skills1} />
