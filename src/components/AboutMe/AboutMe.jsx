@@ -1,6 +1,45 @@
 import PageHeader from "../CommonCoponents/PageHeader";
 
 const AboutMe = () => {
+  const researchTopics = [
+    {
+      id: 1,
+      title: "AI-Driven Cybersecurity Ecosystems",
+      description:
+        "Building autonomous multi-agent systems for real-time threat detection, response, and recovery.",
+    },
+    {
+      id: 2,
+      title: "Quantum-Integrated Security",
+      description:
+        "Designing AI frameworks resilient to quantum-enabled cyberattacks and next-generation threats.",
+    },
+    {
+      id: 3,
+      title: "Autonomous Industrial Decision Systems",
+      description:
+        "Applying reinforcement learning to automate scheduling, routing, and procurement tasks.",
+    },
+    {
+      id: 4,
+      title: "Generative AI for Manufacturing",
+      description:
+        "Using generative models to accelerate production workflow design and rapid prototyping.",
+    },
+    {
+      id: 5,
+      title: "Federated & Privacy-Preserving AI",
+      description:
+        "Developing collaborative AI training across distributed sites without compromising data privacy.",
+    },
+    {
+      id: 6,
+      title: "AI-Powered Business Intelligence",
+      description:
+        "Leveraging predictive analytics and ERP integration to optimize supply chains and boost competitiveness.",
+    },
+  ];
+
   return (
     <div className="bg-white">
       <div className="container mx-auto">
@@ -13,27 +52,73 @@ const AboutMe = () => {
             </div>
             <div className="flex flex-col gap-4">
               <p className="text-base max-[479px]:text-base text-Text-Neutral-Secondary">
-                I am skilled in facilitating the entire lifecycle of a data
-                science project, including Data Extraction, Pre-Processing,
-                Feature Engineering, Dimensionality Reduction, Algorithm
-                Implementation, Back Testing, and Validation. Proficient in
-                various data transformation techniques, I tailor solutions to
-                specific dataset requirements. Experienced in analyzing missing
-                data, I introduce dummy variables for missingness and employ
-                imputation methods such as iterative imputer in Python. I am
-                adept at applying regression and classification models, ensemble
-                learning techniques, and clustering methods.
+                I’m <span className="font-bold">MD AL AMIN</span>, graduated
+                from Daffodil International University in 2018 with a BSc in
+                Textile Engineering. Early in my career in apparel manufacturing
+                industry, I recognized the transformative potential of
+                integrating automation and enterprise resource planning (ERP)
+                into industrial operations. This led me to pursue advanced
+                studies, including a Master of Business Administration in
+                Textiles at the Bangladesh University of Textiles and, more
+                recently, a Master of Science in Information Technology at St.
+                Francis College. During my most recent Mast of Science program,
+                I focused my research on developing artificial intelligence,
+                adaptive, and predictive cybersecurity frameworks. I worked
+                extensively on projects such as dual-encoder adversarial
+                learning for cloud-based intrusion detection, spatio-temporal
+                graph neural networks for connected and automated transport
+                security, and quantum machine learning–integrated cybersecurity
+                systems. My work introduced novel architectures for detecting
+                sophisticated cyberattacks, predicting intrusions seconds before
+                they occur, and securing communications against quantum-enabled
+                threats.
               </p>
               <p className="text-base max-[479px]:text-base text-Text-Neutral-Secondary pt-4">
-                With extensive experience in data cleansing and visualization, I
-                use tools like Tableau, PowerBI, Denodo, Seaborn, Matplotlib,
-                and ggplot2. Proficient in configuring Salesforce quote-to-cash
-                functionalities, I also develop AI solutions using Neural
-                Networks and Deep Learning. Skilled in Big Data tools like
-                Hadoop HDFS, Spark, and MapReduce, I also perform Web Data
-                Mining and NLP. Additionally, I manage projects using JIRA and
-                Confluence, and conduct financial analysis using Python, R, and
-                SAS.
+                Right now, I work at{" "}
+                <span className="font-bold">Jay Apparel Group in New York</span>
+                as a <span className="font-bold">Business Analyst</span>. My
+                day-to-day is all about solving problems and creating bridges
+                between business needs and technology. Whether it’s analyzing
+                data, keeping ERP and network systems running smoothly, and
+                turning complex insights into clear client presentations, I make
+                sure projects move forward efficiently. I enjoy being the person
+                who can translate between tech teams and business leaders so
+                everyone feels aligned and supported. Before moving into this
+                role, I spent over five years in the
+                <span className="font-bold">textile and apparel industry</span>
+                in Bangladesh, working my way up from Assistant Merchandiser to
+                Senior Merchandiser at Uni Gears Ltd. I managed international
+                buyer accounts, oversaw product development, and made sure
+                shipments for brands like Target, Costco, and UMBRO went out on
+                time and at the right quality. Those years taught me how to
+                handle pressure, keep communication flowing across cultures, and
+                find solutions when things didn’t go as planned.
+              </p>
+              <p className="text-base max-[479px]:text-base text-Text-Neutral-Secondary pt-4">
+                My research interests lie at the intersection of artificial
+                intelligence, cybersecurity, and industrial operations, with a
+                focus on designing intelligent systems that enhance the
+                resilience, efficiency, and security of critical U.S.
+                infrastructure.
+              </p>
+              <p className="text-base max-[479px]:text-base text-Text-Neutral-Secondary pt-4">
+                My future research will focus on building autonomous AI-driven
+                cybersecurity ecosystems that can detect, respond to, and
+                recover from threats without human intervention. My goal is to
+                integrate multi-agent reinforcement learning into enterprise and
+                industrial security platforms, each AI agent will specialize in
+                a distinct function real-time anomaly detection, vulnerability
+                assessment, incident containment, and system recovery
+                coordinating through a secure, distributed communication
+                protocol. Such systems will continuously learn from both
+                simulated attack scenarios and live operational data, enabling
+                proactive defense adaptation. Using techniques such as
+                graph-based threat modeling and adversarial training, my work
+                will ensure that these agents anticipate evolving attack
+                patterns. Recovery protocols will automate service restoration,
+                configuration hardening, and forensic reporting, and
+                uninterrupted operations to reduce response times from hours to
+                seconds.
               </p>
             </div>
           </div>
@@ -45,6 +130,19 @@ const AboutMe = () => {
             </h3>
             <div className="flex flex-col gap-y-4">
               {/* Item 1 */}
+              {researchTopics.map((data) => (
+                <div>
+                  <h4 className="font-semibold text-[60px] leading-[110%] text-Text-Brand-Primary pb-2 max-[479px]:text-4xl">
+                    {data.id}
+                  </h4>
+                  <h5 className="text-2xl font-medium text-Text-Neutral-Primary pb-2 max-[479px]:text-xl">
+                    {data.title}
+                  </h5>
+                  <p className="text-base text-Text-Neutral-Secondary max-[479px]:text-sm">
+                    {data.description}
+                  </p>
+                </div>
+              ))}
               <div>
                 <h4 className="font-semibold text-[60px] leading-[110%] text-Text-Brand-Primary pb-2 max-[479px]:text-4xl">
                   01
@@ -58,8 +156,7 @@ const AboutMe = () => {
                 </p>
               </div>
 
-              {/* Item 2 */}
-              <div>
+              {/* <div>
                 <h4 className="font-semibold text-[60px] leading-[110%] text-Text-Brand-Primary pb-2 max-[479px]:text-4xl">
                   02
                 </h4>
@@ -72,7 +169,7 @@ const AboutMe = () => {
                 </p>
               </div>
 
-              {/* Item 3 */}
+       
               <div>
                 <h4 className="font-semibold text-[60px] leading-[110%] text-Text-Brand-Primary pb-2 max-[479px]:text-4xl">
                   03
@@ -84,7 +181,7 @@ const AboutMe = () => {
                   Expert in Tableau, PowerBI, JIRA, Confluence, and reporting
                   dashboards for effective project tracking and visualization.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
