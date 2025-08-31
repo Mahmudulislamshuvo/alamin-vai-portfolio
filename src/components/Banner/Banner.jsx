@@ -1,14 +1,24 @@
 import bannerpic from "../../assets/banner/NewpicBanner.png";
+import { ReactTyped } from "react-typed";
 
 const Banner = () => {
   return (
     <div className="bg-Bg-Neutral-Primary pb-[120px] max-xs:py-0 sm:py-0">
       <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-x-10">
         <div className="py-[150px] w-full sm:py-10 lg:w-[50%] px-6 max-xs:py-5 max-xs:px-4 lg:pl-[160px]">
+          <h2 className="font-semibold text-[40px] sm:text-[64px] lg:text-[124px] leading-[110%] text-Text-Neutral-Primary">
+            Hello
+          </h2>
+          <h3 className="text-3xl font-bold pl-1 text-Text-Neutral-Primary">
+            I'm
+          </h3>
           <h1 className="font-semibold text-[40px] sm:text-[64px] lg:text-[124px] leading-[110%] text-Text-Neutral-Primary">
-            Md
-            <br />
-            Al Amin
+            <ReactTyped
+              strings={["Md Al Amin"]}
+              typeSpeed={150}
+              backSpeed={50}
+              loop={true}
+            />
           </h1>
           <h5 className="text-lg sm:text-xl lg:text-2xl text-Text-Neutral-Primary">
             AI Research Scientist | Machine Learning Expert

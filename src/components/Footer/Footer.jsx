@@ -99,16 +99,16 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/md-al-amin-b50487366/"
                 target="__blank"
               >
-                <TiSocialLinkedinCircular />
+                <TiSocialLinkedinCircular className="w-8 h-8" />
               </a>
               <a
                 href="https://scholar.google.com/citations?user=5f7cSQQAAAAJ&hl=en"
                 target="__blank"
               >
-                <FaGoogleScholar />
+                <FaGoogleScholar className="w-8 h-8" />
               </a>
               <a href="https://orcid.org/0009-0008-8981-9667" target="__blank">
-                <LiaOrcid />
+                <LiaOrcid className="w-8 h-8" />
               </a>
             </li>
           </ul>

@@ -39,6 +39,9 @@
   --color-Text-SemanticError-Inverse: #ffeeee;
   --color-Text-SemanticInfo-Primary: #00599d;
   --color-Text-SemanticInfo-Inverse: #e5f4ff;
+  --color-Text-Black: #000
+
+  /* Breakpoints */
   --breakpoint-xs: 639px;
 
   /* Font Family */

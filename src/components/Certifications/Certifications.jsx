@@ -51,9 +51,9 @@ const Certifications = () => {
   const displayedCerts = showAll ? certifications : certifications.slice(0, 3);
 
   return (
-    <div className="sm:bg-Bg-Neutral-Secondary sm:py-3">
+    <div className="sm:bg-Bg-Neutral-White sm:py-3">
       <div className="container mx-auto relative max-xs:bg-Bg-Brand-Tertiary">
-        <div className="bg-white px-[40px] md:px-[100px] py-[80px] rounded-xl max-xs:hidden">
+        <div className="bg-white px-[40px] md:px-[100px] py-[80px] rounded-xl max-xs:hidden shadow-[0px_0px_14px_2px_rgba(0,_0,_0,_0.1)]">
           <div className="mb-12 ">
             <PageHeader
               title={"PROOF OF QUALIFICATION"}

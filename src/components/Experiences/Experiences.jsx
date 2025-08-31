@@ -98,29 +98,6 @@ const Experiences = () => {
         },
       ],
     },
-    {
-      id: 3,
-      title: "Business Development Manager ",
-      subtitle: "Rijuk Limited (www.iferi.com)",
-      location: "Dhaka",
-      period: "2020 - 2021",
-      orderlist: [
-        {
-          id: 1,
-          task: "Research and identify new business opportunities - including new markets, growth areas, trends, customers, partnerships, products, and services - or new ways of reaching existing markets.",
-        },
-        { id: 2, task: "Seek out the appropriate contact in an organization." },
-        { id: 3, task: "Generate leads and cold call prospective customers." },
-        {
-          id: 4,
-          task: "Understand the needs of your customers and be able to respond effectively with a plan of how to meet these needs.",
-        },
-        {
-          id: 5,
-          task: "Have a good understanding of the businesses' products or services and be able to advise others about them.",
-        },
-      ],
-    },
   ];
 
   return (

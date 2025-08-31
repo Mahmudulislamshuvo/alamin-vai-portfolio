@@ -51,7 +51,7 @@ const AboutMe = () => {
               <PageHeader title={"GET TO KNOW ME"} header={"About Me"} />
             </div>
             <div className="flex flex-col gap-4">
-              <p className="text-base max-[479px]:text-base text-Text-Neutral-Secondary">
+              <p className="text-base max-[479px]:text-base text-Text-Black">
                 I’m <span className="font-bold">MD AL AMIN</span>, graduated
                 from Daffodil International University in 2018 with a BSc in
                 Textile Engineering. Early in my career in apparel manufacturing
@@ -73,7 +73,7 @@ const AboutMe = () => {
                 they occur, and securing communications against quantum-enabled
                 threats.
               </p>
-              <p className="text-base max-[479px]:text-base text-Text-Neutral-Secondary pt-4">
+              <p className="text-base max-[479px]:text-base text-Text-Black pt-4">
                 Right now, I work at{" "}
                 <span className="font-bold">Jay Apparel Group in New York</span>
                 as a <span className="font-bold">Business Analyst</span>. My
@@ -94,7 +94,7 @@ const AboutMe = () => {
                 handle pressure, keep communication flowing across cultures, and
                 find solutions when things didn’t go as planned.
               </p>
-              <p className="text-base max-[479px]:text-base text-Text-Neutral-Secondary pt-4">
+              <p className="text-base max-[479px]:text-base text-Text-Black pt-4">
                 My research interests lie at the intersection of artificial
                 intelligence, cybersecurity, and industrial operations, with a
                 focus on designing intelligent systems that enhance the
@@ -102,15 +102,11 @@ const AboutMe = () => {
                 infrastructure.
               </p>
             </div>
-          </div>
-
-          {/* Research Interests */}
-          <div className="w-full lg:w-[48%] flex flex-col gap-6 max-[479px]:pt-8">
-            <h3 className="text-4xl font-semibold pb-4 text-Text-Neutral-Primary">
-              Research Interests
-            </h3>
-            <div className="flex flex-col gap-y-4">
-              <p className="text-base max-[479px]:text-base text-Text-Neutral-Secondary pt-4">
+            <div className="pt-5">
+              <h3 className="text-2xl font-bold text-Text-Neutral-Primary">
+                Research Interests
+              </h3>
+              <p className="text-base max-[479px]:text-base ttext-Text-Black pt-4">
                 My future research will focus on building autonomous AI-driven
                 cybersecurity ecosystems that can detect, respond to, and
                 recover from threats without human intervention. My goal is to
@@ -129,6 +125,22 @@ const AboutMe = () => {
                 uninterrupted operations to reduce response times from hours to
                 seconds.
               </p>
+            </div>
+          </div>
+
+          {/* Research Interests */}
+          <div className="w-full lg:w-[48%] flex flex-col gap-6 max-[479px]:pt-8">
+            <h3 className="text-4xl font-semibold pb-4 text-Text-Neutral-Primary">
+              Research Area
+            </h3>
+            <div className="flex flex-col gap-y-4">
+              <p className="text-base max-[479px]:text-base text-Text-Black pt-4">
+                My research interests lie at the intersection of artificial
+                intelligence, cybersecurity, and industrial operations, with a
+                focus on designing intelligent systems that enhance the
+                resilience, efficiency, and security of critical U.S.
+                infrastructure.
+              </p>
               {/* Item 1 */}
               {researchTopics.map((data) => (
                 <div>
@@ -138,7 +150,7 @@ const AboutMe = () => {
                   <h5 className="text-2xl font-medium text-Text-Neutral-Primary pb-2 max-[479px]:text-xl">
                     {data.title}
                   </h5>
-                  <p className="text-base text-Text-Neutral-Secondary max-[479px]:text-sm">
+                  <p className="text-base text-Text-Black max-[479px]:text-sm">
                     {data.description}
                   </p>
                 </div>
