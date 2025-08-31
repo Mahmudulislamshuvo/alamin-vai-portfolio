@@ -53,7 +53,7 @@ const Certifications = () => {
   return (
     <div className="sm:bg-Bg-Neutral-Secondary sm:py-3">
       <div className="container mx-auto relative max-xs:bg-Bg-Brand-Tertiary">
-        <div className="bg-Bg-Brand-Tertiary px-[40px] md:px-[100px] py-[80px] rounded-xl max-xs:hidden">
+        <div className="bg-white px-[40px] md:px-[100px] py-[80px] rounded-xl max-xs:hidden">
           <div className="mb-12 ">
             <PageHeader
               title={"PROOF OF QUALIFICATION"}

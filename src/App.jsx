@@ -18,10 +18,11 @@ const App = () => {
       <Navbar />
       <Banner />
       <AboutMe />
-      <Archivement />
+      <Certifications />
+      {/* <Archivement /> */}
       <Experiences />
       <Awards />
-      <Certifications />
+
       <Researches />
       <Education />
       <SkillsAndTools />

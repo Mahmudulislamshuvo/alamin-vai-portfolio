@@ -33,7 +33,7 @@ const Banner = () => {
             <img
               src={bannerpic}
               alt=""
-              className="pt-[30px] sm:pt-[20px] mx-auto"
+              className="pt-[30px] sm:pt-[20px] mx-auto pr-18"
             />
           </div>
         </div>

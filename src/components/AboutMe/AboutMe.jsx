@@ -101,6 +101,15 @@ const AboutMe = () => {
                 resilience, efficiency, and security of critical U.S.
                 infrastructure.
               </p>
+            </div>
+          </div>
+
+          {/* Research Interests */}
+          <div className="w-full lg:w-[48%] flex flex-col gap-6 max-[479px]:pt-8">
+            <h3 className="text-4xl font-semibold pb-4 text-Text-Neutral-Primary">
+              Research Interests
+            </h3>
+            <div className="flex flex-col gap-y-4">
               <p className="text-base max-[479px]:text-base text-Text-Neutral-Secondary pt-4">
                 My future research will focus on building autonomous AI-driven
                 cybersecurity ecosystems that can detect, respond to, and
@@ -120,15 +129,6 @@ const AboutMe = () => {
                 uninterrupted operations to reduce response times from hours to
                 seconds.
               </p>
-            </div>
-          </div>
-
-          {/* Research Interests */}
-          <div className="w-full lg:w-[48%] flex flex-col gap-6 max-[479px]:pt-8">
-            <h3 className="text-4xl font-semibold pb-4 text-Text-Neutral-Primary">
-              Research Interests
-            </h3>
-            <div className="flex flex-col gap-y-4">
               {/* Item 1 */}
               {researchTopics.map((data) => (
                 <div>
@@ -143,18 +143,6 @@ const AboutMe = () => {
                   </p>
                 </div>
               ))}
-              <div>
-                <h4 className="font-semibold text-[60px] leading-[110%] text-Text-Brand-Primary pb-2 max-[479px]:text-4xl">
-                  01
-                </h4>
-                <h5 className="text-2xl font-medium text-Text-Neutral-Primary pb-2 max-[479px]:text-xl">
-                  Data Science & Machine Learning
-                </h5>
-                <p className="text-base text-Text-Neutral-Secondary max-[479px]:text-sm">
-                  Developing and applying data-driven models to extract
-                  insights, forecast trends, and solve complex problems.
-                </p>
-              </div>
 
               {/* <div>
                 <h4 className="font-semibold text-[60px] leading-[110%] text-Text-Brand-Primary pb-2 max-[479px]:text-4xl">
