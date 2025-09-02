@@ -1,7 +1,11 @@
 import { FaGoogleScholar, FaLocationDot } from "react-icons/fa6";
 import { IoCallSharp, IoMail } from "react-icons/io5";
-import { LiaOrcid } from "react-icons/lia";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
+import WebofScience from "../../assets/footer/webofscience.png";
+import researchGate from "../../assets/footer/ResearchGate.png";
+import googleSchooler from "../../assets/footer/Google_Scholar_logo.svg";
+import linkedin from "../../assets/footer/linkedin-svgrepo-com.svg";
+import orcid from "../../assets/footer/ORCID_iD.svg";
 
 const Footer = () => {
   return (
@@ -99,16 +103,40 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/md-al-amin-b50487366/"
                 target="__blank"
               >
-                <TiSocialLinkedinCircular className="w-8 h-8" />
+                <img src={linkedin} alt="researchGate" className="w-8 h-8" />
               </a>
               <a
                 href="https://scholar.google.com/citations?user=5f7cSQQAAAAJ&hl=en"
                 target="__blank"
               >
-                <FaGoogleScholar className="w-8 h-8" />
+                <img
+                  src={googleSchooler}
+                  alt="researchGate"
+                  className="w-8 h-8"
+                />
               </a>
               <a href="https://orcid.org/0009-0008-8981-9667" target="__blank">
-                <LiaOrcid className="w-8 h-8" />
+                <img src={orcid} alt="researchGate" className="w-8 h-8" />
+              </a>
+              <a
+                href="https://www.researchgate.net/profile/Md-Al-Amin-18/research"
+                target="__blank"
+              >
+                <img
+                  src={researchGate}
+                  alt="researchGate"
+                  className="w-8 h-8"
+                />
+              </a>
+              <a
+                href="https://www.researchgate.net/profile/Md-Al-Amin-18/research"
+                target="__blank"
+              >
+                <img
+                  src={WebofScience}
+                  alt="WebofScience"
+                  className="w-8 h-8"
+                />
               </a>
             </li>
           </ul>
