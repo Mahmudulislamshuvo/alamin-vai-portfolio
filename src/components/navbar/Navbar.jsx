@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-4 sm:px-4">
         {/* Brand */}
         <div className="text-2xl text-Text-Neutral-Primary md:mr-10">
-          John Anderson
+          Md Al Amin
         </div>
 
         {/* Hamburger → only for sm */}
