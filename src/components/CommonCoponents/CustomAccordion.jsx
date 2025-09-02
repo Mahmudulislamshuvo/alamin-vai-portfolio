@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
-import image from "../../assets/experience/Rectangle.png";
 
 const CustomAccordion = ({ experienceData = [] }) => {
   const [open, setOpen] = useState(null);
@@ -24,7 +23,11 @@ const CustomAccordion = ({ experienceData = [] }) => {
               <div className="flex flex-col md:flex-row gap-6 items-start justify-between w-full">
                 <div className="flex w-full justify-between items-center gap-x-5 max-xs:gap-x-1">
                   <div className="flex items-center gap-x-4">
-                    <img src={image} alt={image} />
+                    <img
+                      src={project.icon}
+                      alt={"CompanyIcon"}
+                      className="h-auto w-25 object-cover"
+                    />
                     <div className="flex flex-col justify-start items-start">
                       <h3 className="text-3xl font-semibold text-Text-Neutral-Primary max-xs:text-lg max-xs:font-medium">
                         {project.title}
