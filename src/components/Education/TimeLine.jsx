@@ -1,5 +1,8 @@
 import { FaCircle } from "react-icons/fa";
-import image from "../../assets/education/Rectangle.png";
+import stfrancis from "../../assets/education/st-francis-college-seeklogo.png";
+import bangladeshUniversity from "../../assets/education/Bangladesh_University_of_Textile.png";
+import Daffodil_International_University from "../../assets/education/Daffodil_International_University.png";
+import Mirzaganj_U from "../../assets/education/Mirzaganj_U.D.S_High_School.jpg";
 
 const VerticalTimeline = () => {
   const timelineItems = [
@@ -7,19 +10,36 @@ const VerticalTimeline = () => {
       date: "2024 - 2025",
       title: "Master of Science in Information Technology",
       subtitle: "St. Francis College, Brooklyn",
-      description: "Advanced Machine Learning Techniques for Medical Imaging",
+      // description: "Advanced Machine Learning Techniques for Medical Imaging",
+      avatar: stfrancis,
     },
     {
       date: "2020 - 2023",
       title: "MBA in Textile Engineering Management",
       subtitle: "Bangladesh University of Textiles, Bangladesh",
-      description: "Advanced Machine Learning Techniques for Medical Imaging",
+      // description: "Advanced Machine Learning Techniques for Medical Imaging",
+      avatar: bangladeshUniversity,
     },
     {
       date: "2014 - 2018",
       title: "Bachelor of Science in Textile Engineering",
       subtitle: "Daffodil International University, Bangladesh",
-      description: "Advanced Machine Learning Techniques for Medical Imaging",
+      // description: "Advanced Machine Learning Techniques for Medical Imaging",
+      avatar: Daffodil_International_University,
+    },
+    {
+      date: "Jun, 2012 - jun, 2014",
+      title: "Higher Secondary Certificate",
+      subtitle: "Subidkhali Govt Degree College, Bangladesh",
+      // description: "Advanced Machine Learning Techniques for Medical Imaging",
+      avatar: Daffodil_International_University,
+    },
+    {
+      date: "Jan, 2011 - Dec, 2012",
+      title: "Secondary School Certificate",
+      subtitle: "Mirzaganj U.D.S High School",
+      // description: "Advanced Machine Learning Techniques for Medical Imaging",
+      avatar: Mirzaganj_U,
     },
   ];
 
@@ -73,7 +93,7 @@ const VerticalTimeline = () => {
             >
               <div className="p-5 flex gap-4">
                 <img
-                  src={image}
+                  src={item.avatar}
                   alt="Logo"
                   className="h-[72px] w-[72px] md:h-[82px] md:w-[82px] object-cover rounded-lg"
                 />
@@ -84,9 +104,9 @@ const VerticalTimeline = () => {
                   <h5 className="text-sm md:text-base text-gray-700 font-medium">
                     {item.subtitle}
                   </h5>
-                  <p className="text-sm md:text-base text-gray-600 mt-1">
+                  {/* <p className="text-sm md:text-base text-gray-600 mt-1">
                     {item.description}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
