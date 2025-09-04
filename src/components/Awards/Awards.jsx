@@ -27,7 +27,7 @@ const Awards = () => {
     {
       id: 1,
       img: cerificate1,
-      title: "Full Stack Developer",
+      // title: "Full Stack Developer",
       desc: "Google",
       year: "2024",
       button: "View",
@@ -35,7 +35,7 @@ const Awards = () => {
     {
       id: 2,
       img: cerificate2,
-      title: "Full Stack Developer",
+      // title: "Full Stack Developer",
       desc: "Google",
       year: "2024",
       button: "View",
@@ -43,15 +43,15 @@ const Awards = () => {
     {
       id: 3,
       img: cerificate3,
-      title: "Full Stack Developer",
+      // title: "Full Stack Developer",
       desc: "Google",
-      year: "2024",
+      year: "2025",
       button: "View",
     },
     {
       id: 4,
       img: cerificate4,
-      title: "Full Stack Developer",
+      // title: "Full Stack Developer",
       desc: "Google",
       year: "2024",
       button: "View",
@@ -59,7 +59,7 @@ const Awards = () => {
     {
       id: 4,
       img: cerificate5,
-      title: "Full Stack Developer",
+      // title: "Full Stack Developer",
       desc: "Google",
       year: "2024",
       button: "View",
@@ -126,13 +126,15 @@ const Awards = () => {
                   <div className="bg-white rounded-xl border border-[#E9E8E8]">
                     <img
                       src={cert.img}
-                      alt={cert.title}
+                      alt={cert.img}
                       className="w-full h-70 rounded-lg"
                     />
                     <div className="px-6">
-                      <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4 pb-2">
-                        {cert.title}
-                      </h4>
+                      {cert.title && (
+                        <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4 pb-2">
+                          {cert.title}
+                        </h4>
+                      )}
                       <div className="flex justify-between items-center pb-6">
                         <p className="flex items-center gap-2 text-base text-Text-Neutral-Tertiary">
                           {cert.desc}

@@ -20,7 +20,7 @@ const Footer = () => {
           className="text-4xl font-semibold text-Bg-Neutral-White pb-5 
           max-xs:pb-3 sm:text-3xl sm:pb-4"
         >
-          John Anderson
+          Md Al Amin
         </h3>
         <p className="text-Text-Brand-Inverse max-sm:text-base">
           Dedicated researcher specializing in artificial intelligence and

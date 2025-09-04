@@ -5,10 +5,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import cerificate1 from "../../assets/certifications/Rectangle5.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import PageHeader from "../CommonCoponents/PageHeader";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import pic1 from "../../assets/portfolio/Deep_Malware_Detection.png";
+import pic2 from "../../assets/portfolio/Dual-Phase.png";
+import pic3 from "../../assets/portfolio/self-Supervised.png";
 
 const Portfolio = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -22,7 +24,7 @@ const Portfolio = () => {
   const certifications = [
     {
       id: 1,
-      img: cerificate1,
+      img: pic3,
       title: "Artificial Intelligence, Blockchain",
       desc: "Northest Micihigan University",
       year: "2024",
@@ -30,7 +32,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      img: cerificate1,
+      img: pic1,
       title: "Explainable Deep Malware Detection",
       desc: "IEEE Photonics Society Bangladesh",
       year: "2022",
@@ -38,7 +40,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      img: cerificate1,
+      img: pic2,
       title: "Explainable Deep Malware Detection",
       desc: "IEEE Photonics Society Bangladesh",
       year: "2022",

@@ -15,26 +15,69 @@ const Researches = () => {
     {
       id: 1,
       image,
-      title: "Predictive Modeling for Urban Air Quality",
-      des: "Developing a machine learning model to forecast air pollution levels in major urban centers using historical sensor data and meteorological variables. The project aims to support smarter city planning and real-time pollution alerts.",
+      title:
+        "Explainable Deep Malware Detection in IoT Devices Using CNN-BiLSTM",
+      des: "2025 IEEE International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN), 31 July - 2 August 2025, Bangladesh Army University of Science and Technology (BAUST), Saidpur, Nilphamari, Bangladesh",
     },
     {
       id: 2,
       image,
-      title: "Predictive Modeling for Urban Air Quality",
-      des: "Developing a machine learning model to forecast air pollution levels in major urban centers...",
+      title:
+        "Self-Supervised Representation Learning for Human Activity Recognition Using Inertial Sensor Data",
+      des: "2025 IEEE International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN), 31 July - 2 August 2025, Bangladesh Army University of Science and Technology (BAUST), Saidpur, Nilphamari, Bangladesh",
     },
     {
       id: 3,
       image,
-      title: "Predictive Modeling for Urban Air Quality",
-      des: "Developing a machine learning model to forecast air pollution levels in major urban centers...",
+      title:
+        "MoraleTrack: A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
+      des: "3rd International Conference on Artificial Intelligence, Blockchain, and Internet of Things, (AIBThings), September 06 – 07, 2025, CMU, USA",
     },
     {
       id: 4,
       image,
-      title: "Predictive Modeling for Urban Air Quality",
-      des: "Developing a machine learning model to forecast air pollution levels in major urban centers...",
+      title:
+        "SmolLab_SEU at CheckThat! 2025: How Well Do Multilingual Transformers Transfer Across News Domains for Cross-lingual Subjectivity Detection?",
+      des: "CLEF 2025 Conference and Labs of the Evaluation Forum Information Access Evaluation meets Multilinguality, Multimodality, and Visualization, 9 - 12 September 2025, Madrid - Spain",
+    },
+    {
+      id: 5,
+      image,
+      title:
+        "Hinterwelt@LT-EDI 2025: A Transformer-Based Detection of Caste and Migration Hate Speech in Tamil Social Media",
+      des: "Fifth workshop on Language Technology for Equality, Diversity, Inclusion, LTEDI 2025, Sep 09 2025, Naples, Italy",
+    },
+    {
+      id: 6,
+      image,
+      title:
+        "Hinterwelt@LT-EDI 2025: A Transformer-Based Approach for Identifying Racial Hoaxes in Code-Mixed Hindi-English Social Media Narratives",
+      des: "Fifth workshop on Language Technology for Equality, Diversity, Inclusion, LTEDI 2025, Sep 09 2025, Naples, Italy",
+    },
+    {
+      id: 6,
+      image,
+      title:
+        "Hinterwelt@LT-EDI 2025: A Transformer-Based Approach for Identifying Racial Hoaxes in Code-Mixed Hindi-English Social Media Narratives",
+      des: "Fifth workshop on Language Technology for Equality, Diversity, Inclusion, LTEDI 2025, Sep 09 2025, Naples, Italy",
+    },
+    {
+      id: 7,
+      image,
+      title:
+        "Dual-Encoder Adversarial Learning for Cloud-Based Cyber Intrusion Detection",
+    },
+    {
+      id: 8,
+      image,
+      title:
+        "Physics-Informed Self-Supervised Diagnosis of Rotating Machinery Using Latent ODEs and Transformer Encoders",
+    },
+    {
+      id: 9,
+      image,
+      title:
+        "Look-Ahead Cyber-Threat Forecasting for Connected and Automated Transport: A Spatio-Temporal Graph Learning Approach",
     },
   ];
 
@@ -42,50 +85,43 @@ const Researches = () => {
     {
       id: 1,
       image: image2,
-      title: "Predictive Modeling for Urban Air Quality",
-      des: "Developing a machine learning model to forecast air pollution levels in major urban centers...",
-      publish:
-        "IEEE Conference on Computing Applications and Systems, COMPAS 2024",
-      year: "2024",
+      title:
+        "Enhancing Proactive Cyber Defense: A Theoretical Framework for AI-Driven Predictive Cyber Threat Intelligence",
+      des: "The rapid evolution of cyber threats and the dynamic nature of the threat landscape have necessitated the development of...",
+      publish: "Journal of Technologies Information and Communication",
+      year: "2025",
       papername: "Conference Paper",
       link: "10.1145/3723178.3723226",
       btnName: "View Paper",
+      linkbtn: "https://doi.org/10.55267/rtic/16176",
     },
     {
       id: 2,
       image: image2,
-      title: "Predictive Modeling for Urban Air Quality",
-      des: "Developing a machine learning model to forecast air pollution levels...",
+      title:
+        "Quantum Machine Learning for Enhanced Cybersecurity: Proposing a Hypothetical Framework for Next-Generation Security Solutions",
+      des: "The rapid evolution of cyber threats has rendered conventional security approaches inadequate for managing...",
       publish:
         "IEEE Conference on Computing Applications and Systems, COMPAS 2024",
       year: "2024",
       papername: "Conference Paper",
       link: "10.1145/3723178.3723226",
       btnName: "View Paper",
+      linkbtn: "https://doi.org/10.55267/rtic/15824",
     },
     {
       id: 3,
       image: image2,
-      title: "Predictive Modeling for Urban Air Quality",
-      des: "Developing a machine learning model to forecast air pollution levels...",
-      publish:
-        "IEEE Conference on Computing Applications and Systems, COMPAS 2024",
+      title:
+        "Quantum Machine Learning for Enhanced Cybersecurity: Proposing a Hypothetical Framework for Next-Generation Security Solutions",
+      des: "The rapid adoption of AI in educational technology is changing learning settings, making...",
+      ConferencePaper:
+        "20th Workshop on Innovative Use of NLP for Building Educational Applications, July 31 and August 1, 2025.",
       year: "2024",
       papername: "Conference Paper",
       link: "10.1145/3723178.3723226",
       btnName: "View Paper",
-    },
-    {
-      id: 4,
-      image: image2,
-      title: "Predictive Modeling for Urban Air Quality",
-      des: "Developing a machine learning model to forecast air pollution levels...",
-      publish:
-        "IEEE Conference on Computing Applications and Systems, COMPAS 2024",
-      year: "2024",
-      papername: "Conference Paper",
-      link: "10.1145/3723178.3723226",
-      btnName: "View Paper",
+      linkbtn: "https://doi.org/10.18653/v1/2025.bea-1.88",
     },
   ];
 
@@ -125,6 +161,8 @@ const Researches = () => {
                 papername={item.papername}
                 link={item.link}
                 btnName={item.btnName}
+                ConferencePaper={item.ConferencePaper}
+                linkbtn={item.linkbtn}
               />
             ))}
           </div>
@@ -149,7 +187,7 @@ const Researches = () => {
         </div>
 
         {/* Current Researches */}
-        <div className="border-b-2 border-Bg-Neutral-Secondary pb-10 max-xs:pb-9">
+        <div className="border-b-2 border-Bg-Neutral-Secondary pt-10 max-xs:pb-9">
           <h3 className="text-4xl font-semibold text-Text-Brand-Primary pb-7 max-xs:text-2xl max-xs:pb-5 max-xs:px-3 sm:font-medium sm:text-2xl">
             CURRENT RESEARCHES
           </h3>
