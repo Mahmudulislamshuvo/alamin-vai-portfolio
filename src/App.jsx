@@ -14,7 +14,7 @@ import Researches from "./components/Researches/Researches";
 import SkillsAndTools from "./components/Skills/SkillsAndTools";
 
 const App = () => {
-  // সব section এর জন্য ref
+  // all section refs
   const aboutRef = useRef(null);
   const researchRef = useRef(null);
   const educationRef = useRef(null);
