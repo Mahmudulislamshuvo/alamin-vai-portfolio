@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Archivement from "./components/archivement/Archivement";
 import Awards from "./components/Awards/Awards";
@@ -13,21 +14,67 @@ import Researches from "./components/Researches/Researches";
 import SkillsAndTools from "./components/Skills/SkillsAndTools";
 
 const App = () => {
+  // সব section এর জন্য ref
+  const aboutRef = useRef(null);
+  const researchRef = useRef(null);
+  const educationRef = useRef(null);
+  const experienceRef = useRef(null);
+  const skillsRef = useRef(null);
+  const portfolioRef = useRef(null);
+  const contactRef = useRef(null);
+  const homeRef = useRef(null);
+
+  // scroll function
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="font-poppins">
-      <Navbar />
-      <Banner />
-      <AboutMe />
-      <Certifications />
-      {/* <Archivement /> */}
-      <Experiences />
-      <Awards />
+      <Navbar
+        scrollToSection={scrollToSection}
+        refs={{
+          homeRef,
+          aboutRef,
+          researchRef,
+          educationRef,
+          experienceRef,
+          skillsRef,
+          portfolioRef,
+          contactRef,
+        }}
+      />
 
-      <Researches />
-      <Education />
-      <SkillsAndTools />
-      <Portfolio />
-      <ContactForm />
+      <div ref={homeRef}>
+        <Banner />
+      </div>
+      <div ref={aboutRef}>
+        <AboutMe />
+      </div>
+      <div>
+        <Certifications />
+      </div>
+      <div ref={experienceRef}>
+        <Experiences />
+      </div>
+      <div>
+        <Awards />
+      </div>
+      <div ref={researchRef}>
+        <Researches />
+      </div>
+      <div ref={educationRef}>
+        <Education />
+      </div>
+      <div ref={skillsRef}>
+        <SkillsAndTools />
+      </div>
+      <div ref={portfolioRef}>
+        <Portfolio />
+      </div>
+      <div ref={contactRef}>
+        <ContactForm />
+      </div>
       <Footer />
     </div>
   );
