@@ -84,13 +84,7 @@ const Footer = () => {
               <span className="pr-4">
                 <IoMail className="w-6 h-6 max-xs:w-4 max-xs:h-4 sm:w-5 sm:h-5" />
               </span>
-              johnanderaon@gmail.com
-            </li>
-            <li className="flex items-center max-xs:text-base max-xs:font-normal">
-              <span className="pr-4">
-                <IoCallSharp className="w-6 h-6 max-xs:w-4 max-xs:h-4 sm:w-5 sm:h-5" />
-              </span>
-              +1 (555) 123-4567
+              alaminhossine@gmail.com
             </li>
             <li className="flex items-center max-xs:text-base max-xs:font-normal">
               <span className="pr-4">
@@ -98,7 +92,7 @@ const Footer = () => {
               </span>
               New York, USA
             </li>
-            <li className="flex items-center gap-x-4 text-2xl sm:text-xl">
+            <li className="flex items-center gap-x-4 text-2xl sm:text-xl pt-10">
               <a
                 href="https://www.linkedin.com/in/md-al-amin-b50487366/"
                 target="__blank"

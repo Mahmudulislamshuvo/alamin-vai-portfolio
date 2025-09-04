@@ -127,7 +127,7 @@ const Awards = () => {
                     <img
                       src={cert.img}
                       alt={cert.title}
-                      className="w-full h-70 object-cover rounded-lg"
+                      className="w-full h-70 rounded-lg"
                     />
                     <div className="px-6">
                       <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4 pb-2">

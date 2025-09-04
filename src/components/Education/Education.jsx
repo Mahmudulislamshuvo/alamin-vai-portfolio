@@ -1,5 +1,5 @@
 import PageHeader from "../CommonCoponents/PageHeader";
-import TimeLine from "./Timeline";
+import VerticalTimeline from "./TimeLine";
 
 const Education = () => {
   return (
@@ -10,7 +10,7 @@ const Education = () => {
         </div>
         <div>
           <div className="max-xs:w-full sm:w-[95%]">
-            <TimeLine />
+            <VerticalTimeline />
           </div>
         </div>
       </div>

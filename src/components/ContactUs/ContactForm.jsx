@@ -25,14 +25,9 @@ const ContactForm = () => {
           </div>
           <div>
             <ContactInfo
-              icon={<IoCall className="w-6 h-6 text-Text-Neutral-Primary" />}
-              name={"Phone"}
-              info={"+1 (555) 123-4567"}
-            />
-            <ContactInfo
               icon={<MdEmail className="w-6 h-6 text-Text-Neutral-Primary" />}
               name={"Email"}
-              info={"johnanderaon@gmail.com"}
+              info={"alaminhossine@gmail.com"}
             />
             <ContactInfo
               icon={<TiHome className="w-6 h-6 text-Text-Neutral-Primary" />}

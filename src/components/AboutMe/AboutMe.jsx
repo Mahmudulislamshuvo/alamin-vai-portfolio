@@ -44,13 +44,13 @@ const AboutMe = () => {
     <div className="bg-white">
       <div className="container mx-auto">
         {/* Parent container */}
-        <div className="px-[160px] py-[160px] max-[479px]:p-3 bg-Bg-Brand-Tertiary flex flex-col lg:flex-row items-start gap-8 rounded-2xl max-sm:p-3 sm:px-5 sm:py-5">
+        <div className="px-[160px] py-[160px] max-[479px]:p-3 bg-Bg-Brand-Tertiary flex flex-col lg:flex-row items-start gap-8 rounded-2xl max-sm:p-3 sm:px-5 sm:py-5 shadow-[0px_0px_25px_-14px_#000]">
           {/* About Me Content */}
           <div className="w-full lg:w-[48%]">
             <div className="pb-[80px] max-[479px]:pb-6 sm:pb-6">
-              <PageHeader title={"GET TO KNOW ME"} header={"About Me"} />
+              <PageHeader header={"About Me"} />
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 text-justify">
               <p className="text-base max-[479px]:text-base text-Text-Black">
                 I’m <span className="font-bold">MD AL AMIN</span>, graduated
                 from Daffodil International University in 2018 with a BSc in
@@ -75,7 +75,9 @@ const AboutMe = () => {
               </p>
               <p className="text-base max-[479px]:text-base text-Text-Black pt-4">
                 Right now, I work at{" "}
-                <span className="font-bold">Jay Apparel Group in New York</span>
+                <span className="font-bold px-1">
+                  Jay Apparel Group in New York
+                </span>
                 as a <span className="font-bold">Business Analyst</span>. My
                 day-to-day is all about solving problems and creating bridges
                 between business needs and technology. Whether it’s analyzing
@@ -85,7 +87,9 @@ const AboutMe = () => {
                 who can translate between tech teams and business leaders so
                 everyone feels aligned and supported. Before moving into this
                 role, I spent over five years in the
-                <span className="font-bold">textile and apparel industry</span>
+                <span className="font-bold px-1">
+                  textile and apparel industry
+                </span>
                 in Bangladesh, working my way up from Assistant Merchandiser to
                 Senior Merchandiser at Uni Gears Ltd. I managed international
                 buyer accounts, oversaw product development, and made sure
@@ -102,7 +106,7 @@ const AboutMe = () => {
                 infrastructure.
               </p>
             </div>
-            <div className="pt-5">
+            <div className="pt-5 text-justify">
               <h3 className="text-2xl font-bold text-Text-Neutral-Primary">
                 Research Interests
               </h3>

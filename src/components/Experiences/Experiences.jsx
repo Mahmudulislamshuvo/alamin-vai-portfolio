@@ -208,9 +208,9 @@ const Experiences = () => {
   ];
 
   return (
-    <div className="sm:bg-Bg-Neutral-Secondary">
+    <div className="">
       <div className="container mx-auto ">
-        <div className="rounded-xl bg-Bg-Brand-Tertiary px-[160px] py-[120px] max-xs:p-3 sm:p-5 ">
+        <div className="rounded-xl bg-Bg-Brand-Tertiary px-[160px] py-[120px] max-xs:p-3 sm:p-5 shadow-[0px_0px_25px_-14px_#000]">
           <div className="pb-[80px] max-xs:pb-5">
             <PageHeader
               title={"PROFESSIONAL & RESEARCH ROLES"}
