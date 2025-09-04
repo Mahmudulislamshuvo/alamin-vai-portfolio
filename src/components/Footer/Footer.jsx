@@ -123,8 +123,8 @@ const Footer = () => {
                 target="__blank"
               >
                 <img
-                  src={researchGate}
-                  alt="researchGate"
+                  src={WebofScience}
+                  alt="WebofScience"
                   className="w-8 h-8"
                 />
               </a>
@@ -133,8 +133,8 @@ const Footer = () => {
                 target="__blank"
               >
                 <img
-                  src={WebofScience}
-                  alt="WebofScience"
+                  src={researchGate}
+                  alt="researchGate"
                   className="w-8 h-8"
                 />
               </a>
