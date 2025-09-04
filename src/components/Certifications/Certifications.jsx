@@ -9,8 +9,20 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import PageHeader from "../CommonCoponents/PageHeader";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import cerificate1 from "../../assets/certifications/PMI-PMP-Certfication.jpg";
-import cerificate2 from "../../assets/certifications/CompTIA-certificate.jpg";
+import cerificate2 from "../../assets/certifications/CompTIA_Security.png";
 import cerificate3 from "../../assets/certifications/Generative-AI.jpg";
+import CompTIA_A from "../../assets/certifications/CompTIA_A.png";
+import Job_Simulation from "../../assets/certifications/Management_Job_Simulation.png";
+import AccentureStrategy from "../../assets/certifications/Accenture-Strategy.png";
+import CBRE_Project from "../../assets/certifications/CBRE_Project.png";
+import Discover_Professional from "../../assets/certifications/Discover-Professional.png";
+import Lululemon from "../../assets/certifications/Lululemon.png";
+import Pepsico from "../../assets/certifications/PEPSICOn.png";
+import Pwc from "../../assets/certifications/PWC.png";
+import Red_Bull from "../../assets/certifications/Red_Bull.png";
+import dualFace from "../../assets/certifications/Dual-Phase.png";
+import Deep_Malware_Detection from "../../assets/certifications/Deep_Malware_Detection.png";
+import self_Supervised from "../../assets/certifications/self-Supervised.png";
 
 const Certifications = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -25,25 +37,122 @@ const Certifications = () => {
     {
       id: 1,
       img: cerificate1,
-      title: "Full Stack Developer",
-      desc: "Google",
+      title: "Project Management Professional(PMP)",
+      desc: "PMP",
       year: "2024",
       button: "View",
     },
     {
       id: 2,
       img: cerificate2,
-      title: "Full Stack Developer",
-      desc: "Google",
+      title: "CampTIA Security+",
+      desc: "CampTIA",
+      year: "2025",
+      button: "View",
+    },
+
+    {
+      id: 3,
+      img: cerificate3,
+      title: "Generative AI Overview",
+      desc: "PMP",
       year: "2024",
       button: "View",
     },
     {
-      id: 3,
-      img: cerificate3,
-      title: "Full Stack Developer",
-      desc: "Google",
+      id: 4,
+      img: CompTIA_A,
+      title: "CampTIA A+",
+      desc: "CampTIA",
+      year: "2025",
+      button: "View",
+    },
+    {
+      id: 5,
+      img: Job_Simulation,
+      title: "Management Job Simulation",
+      desc: "Accenture",
       year: "2024",
+      button: "View",
+    },
+    {
+      id: 6,
+      img: AccentureStrategy,
+      title: "Strategy Consulting Job Simulation",
+      desc: "Accenture",
+      year: "2024",
+      button: "View",
+    },
+    {
+      id: 7,
+      img: CBRE_Project,
+      title: "Project	Management	Job	Simulation",
+      desc: "CBRE",
+      year: "2024",
+      button: "View",
+    },
+    {
+      id: 8,
+      img: Discover_Professional,
+      title: "Professional	Skills	Job	Simulation",
+      desc: "DISCOVER",
+      year: "2024",
+      button: "View",
+    },
+    {
+      id: 9,
+      img: Pepsico,
+      title: "Sales	Job	Simulation",
+      desc: "PEPSICO",
+      year: "2025",
+      button: "View",
+    },
+    {
+      id: 10,
+      img: Pwc,
+      title: "Management	Consulting	Simulation",
+      desc: "PWC",
+      year: "2025",
+      button: "View",
+    },
+    {
+      id: 11,
+      img: Red_Bull,
+      title: "On-Premise	Sales	Job	Simulation",
+      desc: "RedBull",
+      year: "2025",
+      button: "View",
+    },
+    {
+      id: 12,
+      img: Lululemon,
+      title: "Omnichannel	Marketing	Job	Simulation",
+      desc: "Lululemon",
+      year: "2024",
+      button: "View",
+    },
+    {
+      id: 13,
+      img: dualFace,
+      title: "Artificial Intelligence, Blockchain",
+      desc: "Northest Micihigan University",
+      year: "2024",
+      button: "View",
+    },
+    {
+      id: 14,
+      img: Deep_Malware_Detection,
+      title: "Explainable Deep Malware Detection",
+      desc: "IEEE Photonics Society Bangladesh",
+      year: "2022",
+      button: "View",
+    },
+    {
+      id: 15,
+      img: self_Supervised,
+      title: "Explainable Deep Malware Detection",
+      desc: "IEEE Photonics Society Bangladesh",
+      year: "2022",
       button: "View",
     },
   ];
@@ -112,9 +221,10 @@ const Certifications = () => {
                     className="w-full h-70 rounded-lg"
                   />
                   <div className="px-6">
-                    <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4 pb-2">
+                    <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4 pb-2 truncate w-[250px]">
                       {cert.title}
                     </h4>
+
                     <div className="flex justify-between items-center pb-6">
                       <p className="flex items-center gap-2 text-base text-Text-Neutral-Tertiary">
                         {cert.desc}
