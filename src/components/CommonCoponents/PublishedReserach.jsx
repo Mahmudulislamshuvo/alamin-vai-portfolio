@@ -36,8 +36,8 @@ const PublishedReserach = ({
             )}
             {ConferencePaper ? ConferencePaper : publish}
           </p>
-          <div className="flex justify-between pt-2">
-            <div className="text-Text-Neutral-Tertiary flex gap-x-4">
+          <div className="flex flex-col gap-y-2 sm:flex-col md:flex-row md:justify-between pt-2">
+            <div className="text-Text-Neutral-Tertiary flex flex-col sm:flex-col md:flex-row md:gap-x-4">
               <span>{year}</span>
               <span className="text-Text-Neutral-Tertiary">{papername}</span>
               <span>
@@ -66,7 +66,7 @@ const PublishedReserach = ({
             </span>
             {publish}
           </p>
-          <div className="pt-2">
+          <div className="pt-2 sm:flex sm:flex-col sm:gap-y-2">
             <div className="text-Text-Neutral-Tertiary flex gap-x-4">
               <span className="border-r border-Text-Neutral-Secondary pr-2">
                 <span>DOI:</span>

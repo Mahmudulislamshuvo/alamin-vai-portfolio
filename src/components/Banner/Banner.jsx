@@ -41,11 +41,27 @@ const Banner = () => {
               Download CV
             </button>
           </div>
-          <div className="flex items-center gap-x-5 pt-20 max-xs:justify-center max-sm:justify-center">
-            <img src={badge1} alt="badge1" className="w-20 h-20 rounded-full" />
-            <img src={badge2} alt="badge2" className="w-20 h-20 rounded-full" />
-            <img src={badge3} alt="badge3" className="w-20 h-20 rounded-full" />
-            <img src={badge4} alt="badge4" className="w-20 h-20 rounded-full" />
+          <div className="flex items-center gap-x-5 pt-20 max-xs:justify-center max-sm:justify-center max-xs:gap-x-2">
+            <img
+              src={badge1}
+              alt="badge1"
+              className="w-20 h-20 rounded-full max-xs:w-15 max-xs:h-15"
+            />
+            <img
+              src={badge2}
+              alt="badge2"
+              className="w-20 h-20 rounded-full max-xs:w-15 max-xs:h-15"
+            />
+            <img
+              src={badge3}
+              alt="badge3"
+              className="w-20 h-20 rounded-full max-xs:w-15 max-xs:h-15"
+            />
+            <img
+              src={badge4}
+              alt="badge4"
+              className="w-20 h-20 rounded-full max-xs:w-15 max-xs:h-15"
+            />
           </div>
         </div>
         <div className="w-full lg:w-[40%] bg-gradient-to-r from-[rgba(216,212,223,0.05)] to-[rgba(197,230,76,0.50)] rounded-sm pt-11">
