@@ -7,21 +7,23 @@
 This repository contains the source code for the personal and professional portfolio of Alamin, a dedicated professional showcasing skills, experiences, and accomplishments.
 
 <!-- 💡 **Comment for you:** Add your live demo link below! -->
+
 **[Live Demo](https://your-live-demo-link.com)**
 
 ## 📸 Screenshots
 
 <!-- 💡 **Comment for you:** You can replace these with your actual screenshot paths from the `public` folder, like `/public/Screenshot1.png`. -->
-| Desktop View                                     | Mobile View                                    |
-| ------------------------------------------------ | ---------------------------------------------- |
+
+| Desktop View                                  | Mobile View                                 |
+| --------------------------------------------- | ------------------------------------------- |
 | ![Desktop Banner](./public/DesktopBanner.png) | ![Mobile Banner](./public/MobileBanner.png) |
 
-|               Project Showcase 1               |               Project Showcase 2               |
-| :--------------------------------------------: | :--------------------------------------------: |
+|            Project Showcase 1             |            Project Showcase 2             |
+| :---------------------------------------: | :---------------------------------------: |
 | ![Screenshot 1](./public/Screenshot1.png) | ![Screenshot 2](./public/Screenshot2.png) |
 
-|               Project Showcase 3               |               Project Showcase 4               |
-| :--------------------------------------------: | :--------------------------------------------: |
+|            Project Showcase 3             |            Project Showcase 4             |
+| :---------------------------------------: | :---------------------------------------: |
 | ![Screenshot 3](./public/Screenshot3.png) | ![Screenshot 4](./public/Screenshot4.png) |
 
 ## ✨ Features
@@ -55,18 +57,22 @@ Follow these instructions to set up and run the project on your local machine.
 ### Prerequisites
 
 Make sure you have the following installed:
+
 - [Node.js](https://nodejs.org/en/) (v18.x or higher recommended)
 - [npm](https://www.npmjs.com/) (or yarn)
 
 ### Installation
 
 1.  **Clone the repository:**
+
     ```sh
     git clone https://github.com/your-username/your-repository-name.git
     ```
+
     <!-- 💡 **Comment for you:** Remember to change `your-username/your-repository-name` to your actual repository URL! -->
 
 2.  **Navigate to the project directory:**
+
     ```sh
     cd alamin-vai-portfolio
     ```
@@ -79,15 +85,19 @@ Make sure you have the following installed:
 ### Running the Project
 
 - **To start the development server:**
+
   ```sh
   npm run dev
   ```
+
   The application will be available at `http://localhost:5173` (or another port if 5173 is busy).
 
 - **To build the project for production:**
+
   ```sh
   npm run build
   ```
+
   The optimized static files will be generated in the `dist` folder.
 
 - **To preview the production build locally:**
@@ -122,7 +132,9 @@ alamin-vai-portfolio/
 ## 🤝 Contact
 
 <!-- 💡 **Comment for you:** Add your contact information here! -->
-**Alamin**
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-- **GitHub:** [Your GitHub Profile](https://github.com/your-username)
-- **Email:** your.email@example.com
+
+**Mahmudul Islam**
+
+- **LinkedIn:** [https://www.linkedin.com/in/mahmudul-islam-shuvo/](https://www.linkedin.com/in/mahmudul-islam-shuvo/)
+- **GitHub:** [https://github.com/Mahmudulislamshuvo](https://github.com/Mahmudulislamshuvo)
+- **Email:** mahmudulislammern@gmail.com
