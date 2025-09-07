@@ -147,7 +147,7 @@ const AboutMe = () => {
               </p>
               {/* Item 1 */}
               {researchTopics.map((data) => (
-                <div>
+                <div key={data.id}>
                   <h4 className="font-semibold text-[60px] leading-[110%] text-Text-Brand-Primary pb-2 max-[479px]:text-4xl">
                     {data.id}
                   </h4>

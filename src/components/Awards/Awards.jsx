@@ -13,12 +13,17 @@ import cerificate2 from "../../assets/awardsMembership/IIBA-Membership2.jpg";
 import cerificate3 from "../../assets/awardsMembership/IEEE-MEMBERSHIP3.jpg";
 import cerificate4 from "../../assets/awardsMembership/IEEE-COMPUTER-SOCITY-MEMBERSHIP4.jpg";
 import cerificate5 from "../../assets/awardsMembership/IEEE-Young-Professional5.jpg";
+import Modal from "react-responsive-modal";
 
 const Awards = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
   const [showAll, setShowAll] = useState(false);
+
+  // modal states
+  const [open, setOpen] = useState(false);
+  const [selectedCert, setSelectedCert] = useState(null);
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -67,6 +72,11 @@ const Awards = () => {
   ];
 
   const displayedCerts = showAll ? certifications : certifications.slice(0, 3);
+
+  const handleModal = (cert) => {
+    setSelectedCert(cert);
+    setOpen(true);
+  };
 
   return (
     <div className="bg-Bg-Neutral-White sm:bg-Bg-Neutral-Secondary md:bg-Bg-Neutral-Secondary lg:bg-Bg-Neutral-White max-xs:bg-Bg-Neutral-Secondary ">
@@ -121,8 +131,8 @@ const Awards = () => {
                 1024: { slidesPerView: 3, spaceBetween: 40 },
               }}
             >
-              {certifications.map((cert) => (
-                <SwiperSlide key={cert.id}>
+              {certifications.map((cert, index) => (
+                <SwiperSlide key={index}>
                   <div className="bg-white rounded-xl border border-[#E9E8E8]">
                     <img
                       src={cert.img}
@@ -141,7 +151,10 @@ const Awards = () => {
                           <span className="border-l h-5"></span>
                           {cert.year}
                         </p>
-                        <button className="text-base text-Text-Brand-Primary">
+                        <button
+                          onClick={() => handleModal(cert)}
+                          className="text-base text-Text-Brand-Primary"
+                        >
                           {cert.button}
                         </button>
                       </div>
@@ -171,7 +184,10 @@ const Awards = () => {
                         <span className="border-l h-5"></span>
                         {cert.year}
                       </p>
-                      <button className="text-base text-Text-Brand-Primary">
+                      <button
+                        onClick={() => handleModal(cert)}
+                        className="text-base text-Text-Brand-Primary"
+                      >
                         {cert.button}
                       </button>
                     </div>
@@ -195,6 +211,26 @@ const Awards = () => {
           </div>
         </div>
       </div>
+      {/* React Modal */}
+      <Modal
+        open={open}
+        onClose={() => {
+          setOpen(false);
+          setSelectedCert(null);
+        }}
+        center
+      >
+        {selectedCert && (
+          <div className="text-center">
+            <h2 className="text-xl font-semibold mb-3">{selectedCert.title}</h2>
+            <img
+              src={selectedCert.img}
+              alt={selectedCert.title}
+              className="w-full h-auto rounded-lg mb-4 border border-Text-Neutral-Secondary shadow"
+            />
+          </div>
+        )}
+      </Modal>
     </div>
   );
 };

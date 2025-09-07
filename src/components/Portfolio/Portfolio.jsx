@@ -11,12 +11,17 @@ import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import pic1 from "../../assets/portfolio/Deep_Malware_Detection.png";
 import pic2 from "../../assets/portfolio/Dual-Phase.png";
 import pic3 from "../../assets/portfolio/self-Supervised.png";
+import Modal from "react-responsive-modal";
 
 const Portfolio = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
   const [showAll, setShowAll] = useState(false);
+
+  // modal states
+  const [open, setOpen] = useState(false);
+  const [selectedCert, setSelectedCert] = useState(null);
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -52,6 +57,11 @@ const Portfolio = () => {
   ];
 
   const displayedCerts = showAll ? certifications : certifications.slice(0, 3);
+
+  const handleModal = (cert) => {
+    setSelectedCert(cert);
+    setOpen(true);
+  };
 
   return (
     <div className="container mx-auto relative">
@@ -121,7 +131,10 @@ const Portfolio = () => {
                       {/* <span className="border-l h-5"></span> */}
                       <span className="border-l h-5"> {cert.year}</span>
                     </p>
-                    <button className="text-base text-Text-Brand-Primary">
+                    <button
+                      onClick={() => handleModal(cert)}
+                      className="text-base text-Text-Brand-Primary"
+                    >
                       {cert.button}
                     </button>
                   </div>
@@ -159,7 +172,10 @@ const Portfolio = () => {
                     <span className="border-l h-5"></span>
                     {cert.year}
                   </p>
-                  <button className="text-base text-Text-Brand-Primary">
+                  <button
+                    onClick={() => handleModal(cert)}
+                    className="text-base text-Text-Brand-Primary"
+                  >
                     {cert.button}
                   </button>
                 </div>
@@ -181,6 +197,26 @@ const Portfolio = () => {
           )}
         </div>
       </div>
+      {/* React Modal */}
+      <Modal
+        open={open}
+        onClose={() => {
+          setOpen(false);
+          setSelectedCert(null);
+        }}
+        center
+      >
+        {selectedCert && (
+          <div className="text-center">
+            <h2 className="text-xl font-semibold mb-3">{selectedCert.title}</h2>
+            <img
+              src={selectedCert.img}
+              alt={selectedCert.title}
+              className="w-full h-auto rounded-lg mb-4 border border-Text-Neutral-Secondary shadow"
+            />
+          </div>
+        )}
+      </Modal>
     </div>
   );
 };
