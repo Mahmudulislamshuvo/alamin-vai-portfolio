@@ -30,19 +30,19 @@ const Portfolio = () => {
   const certifications = [
     {
       id: 1,
-      img: pic3,
+      img: pic1,
       title:
-        "Acceptance letter A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
-      desc: "Northest Micihigan University",
-      year: "2024",
+        "Certification of Presentation-Explainable Deep Malware Detection in IoT Devices Using CNN-BiLSTM",
+      desc: "IEEE",
+      year: "2025",
       button: "View",
     },
     {
       id: 2,
-      img: pic1,
+      img: pic3,
       title:
-        "Presentation Explainable Deep Malware Detection in IoT Devices Using CNN-BiLSTM",
-      desc: "IEEE Photonics Society Bangladesh",
+        "Certification of Presentation-Self-Supervised Representation Learning for Human Activity Recognition Using Inertial Sensor Data",
+      desc: "IEEE",
       year: "2025",
       button: "View",
     },
@@ -50,8 +50,8 @@ const Portfolio = () => {
       id: 3,
       img: pic2,
       title:
-        "Presentation Self-Supervised Representation Learning for Human Activity Recognition Using Inertial Sensor Data",
-      desc: "IEEE Photonics Society Bangladesh",
+        "Acceptance letter A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
+      desc: "IEEE",
       year: "2025",
       button: "View",
     },

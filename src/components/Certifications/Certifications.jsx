@@ -105,7 +105,7 @@ const Certifications = () => {
       img: Discover_Professional,
       title: "Professional Skills Job Simulation",
       desc: "DISCOVER",
-      year: "2024",
+      year: "2025",
       button: "View",
     },
     {
@@ -121,7 +121,7 @@ const Certifications = () => {
       img: Pwc,
       title: "Management Consulting Simulation",
       desc: "PWC",
-      year: "2025",
+      year: "2024",
       button: "View",
     },
     {
@@ -145,8 +145,8 @@ const Certifications = () => {
       img: dualFace,
       title:
         "Acceptance letter A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
-      desc: "Northest Micihigan University",
-      year: "2024",
+      desc: "Central Micihigan University",
+      year: "2025",
       button: "View",
     },
     {
