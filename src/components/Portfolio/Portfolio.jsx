@@ -25,7 +25,8 @@ const Portfolio = () => {
     {
       id: 1,
       img: pic3,
-      title: "Artificial Intelligence, Blockchain",
+      title:
+        "Acceptance letter A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
       desc: "Northest Micihigan University",
       year: "2024",
       button: "View",
@@ -33,17 +34,19 @@ const Portfolio = () => {
     {
       id: 2,
       img: pic1,
-      title: "Explainable Deep Malware Detection",
+      title:
+        "Presentation Explainable Deep Malware Detection in IoT Devices Using CNN-BiLSTM",
       desc: "IEEE Photonics Society Bangladesh",
-      year: "2022",
+      year: "2025",
       button: "View",
     },
     {
       id: 3,
       img: pic2,
-      title: "Explainable Deep Malware Detection",
+      title:
+        "Presentation Self-Supervised Representation Learning for Human Activity Recognition Using Inertial Sensor Data",
       desc: "IEEE Photonics Society Bangladesh",
-      year: "2022",
+      year: "2025",
       button: "View",
     },
   ];
@@ -108,16 +111,15 @@ const Portfolio = () => {
                   className="w-full h-70 rounded-lg"
                 />
                 <div className="px-6">
-                  <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4 pb-2">
+                  <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4 pb-2 truncate max-w-[350px]">
                     {cert.title}
                   </h4>
+
                   <div className="flex justify-between items-center pb-6">
                     <p className="flex items-center gap-2 text-base text-Text-Neutral-Tertiary">
                       {cert.desc}
-                      <span className="border-l h-5"></span>
-                      {"Google/Coursera"}
-                      <span className="border-l h-5"></span>
-                      {cert.year}
+                      {/* <span className="border-l h-5"></span> */}
+                      <span className="border-l h-5"> {cert.year}</span>
                     </p>
                     <button className="text-base text-Text-Brand-Primary">
                       {cert.button}

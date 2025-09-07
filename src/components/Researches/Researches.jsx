@@ -5,6 +5,7 @@ import image from "../../assets/reserach/Rectangle9.png";
 import CurrentResearchCart from "../CommonCoponents/CurrentResearchCart";
 import PublishedReserach from "../CommonCoponents/PublishedReserach";
 import image2 from "../../assets/reserach/Rectangle2.png";
+// import imgResearch from "../../assets/reserach/rtic-capa.jpg";
 
 const Researches = () => {
   // State for toggling view

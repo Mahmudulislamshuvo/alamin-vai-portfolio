@@ -35,7 +35,7 @@ const Banner = () => {
           </p>
           <div className="flex flex-wrap items-center gap-4 pt-6 sm:pt-9">
             <button className="font-medium px-[28px] py-3 sm:px-[33px] sm:py-4 text-white bg-Text-Brand-Primary rounded-[100000px] max-xs:w-full">
-              Contact Me
+              <a href="mailto:alaminhossine@gmail.com">Contact Me</a>
             </button>
             <button className="font-medium px-[28px] py-3 sm:px-[33px] sm:py-4 text-Text-Brand-Primary border border-Text-Brand-Primary rounded-[100000px] max-xs:w-full">
               Download CV
@@ -43,7 +43,7 @@ const Banner = () => {
           </div>
           <div className="flex items-center gap-x-5 pt-20 max-xs:justify-center max-sm:justify-center max-xs:gap-x-2">
             <img
-              src={badge1}
+              src={badge4}
               alt="badge1"
               className="w-20 h-20 rounded-full max-xs:w-15 max-xs:h-15"
             />
@@ -58,7 +58,7 @@ const Banner = () => {
               className="w-20 h-20 rounded-full max-xs:w-15 max-xs:h-15"
             />
             <img
-              src={badge4}
+              src={badge1}
               alt="badge4"
               className="w-20 h-20 rounded-full max-xs:w-15 max-xs:h-15"
             />

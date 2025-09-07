@@ -3,6 +3,7 @@ import stfrancis from "../../assets/education/st-francis-college-seeklogo.png";
 import bangladeshUniversity from "../../assets/education/Bangladesh_University_of_Textile.png";
 import Daffodil_International_University from "../../assets/education/Daffodil_International_University.png";
 import Mirzaganj_U from "../../assets/education/Mirzaganj_U.D.S_High_School.jpg";
+import Subidkhali_Govt_Degree_College1 from "../../assets/education/Subidkhali_Govt_Degree_College1.jpg";
 
 const VerticalTimeline = () => {
   const timelineItems = [
@@ -32,7 +33,7 @@ const VerticalTimeline = () => {
       title: "Higher Secondary Certificate",
       subtitle: "Subidkhali Govt Degree College, Bangladesh",
       // description: "Advanced Machine Learning Techniques for Medical Imaging",
-      avatar: Daffodil_International_University,
+      avatar: Subidkhali_Govt_Degree_College1,
     },
     {
       date: "Jan, 2011 - Dec, 2012",

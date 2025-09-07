@@ -17,7 +17,7 @@ const ContactForm = () => {
         <div className="w-full border border-Bg-Neutral-Primary p-6 rounded-xl max-xs:bg-Bg-Neutral-White sm:p-0">
           <div className="pb-5">
             <h3 className="text-xl font-semibold text-Text-Neutral-Primary">
-              John Anderson
+              Md Al Amin
             </h3>
             <h6 className="font-medium text-Text-Neutral-Primary pb-1">
               AI Research Scientist | Machine Learning Expert

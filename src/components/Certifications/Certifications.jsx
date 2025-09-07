@@ -44,6 +44,14 @@ const Certifications = () => {
     },
     {
       id: 2,
+      img: CompTIA_A,
+      title: "CampTIA A+",
+      desc: "CampTIA",
+      year: "2025",
+      button: "View",
+    },
+    {
+      id: 3,
       img: cerificate2,
       title: "CampTIA Security+",
       desc: "CampTIA",
@@ -52,21 +60,14 @@ const Certifications = () => {
     },
 
     {
-      id: 3,
+      id: 4,
       img: cerificate3,
-      title: "Generative AI Overview",
+      title: "Generative AI Overview for Project Managers",
       desc: "PMP",
       year: "2024",
       button: "View",
     },
-    {
-      id: 4,
-      img: CompTIA_A,
-      title: "CampTIA A+",
-      desc: "CampTIA",
-      year: "2025",
-      button: "View",
-    },
+
     {
       id: 5,
       img: Job_Simulation,
@@ -134,7 +135,8 @@ const Certifications = () => {
     {
       id: 13,
       img: dualFace,
-      title: "Artificial Intelligence, Blockchain",
+      title:
+        "Acceptance letter A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
       desc: "Northest Micihigan University",
       year: "2024",
       button: "View",
@@ -142,17 +144,19 @@ const Certifications = () => {
     {
       id: 14,
       img: Deep_Malware_Detection,
-      title: "Explainable Deep Malware Detection",
+      title:
+        "Presentation Explainable Deep Malware Detection in IoT Devices Using CNN-BiLSTM",
       desc: "IEEE Photonics Society Bangladesh",
-      year: "2022",
+      year: "2025",
       button: "View",
     },
     {
       id: 15,
       img: self_Supervised,
-      title: "Explainable Deep Malware Detection",
+      title:
+        "Presentation Self-Supervised Representation Learning for Human Activity Recognition Using Inertial Sensor Data",
       desc: "IEEE Photonics Society Bangladesh",
-      year: "2022",
+      year: "2025",
       button: "View",
     },
   ];
