@@ -8,6 +8,9 @@ import "swiper/css/scrollbar";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import PageHeader from "../CommonCoponents/PageHeader";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import { Modal } from "react-responsive-modal";
+import "react-responsive-modal/styles.css";
+
 import cerificate1 from "../../assets/certifications/PMI-PMP-Certfication.jpg";
 import cerificate2 from "../../assets/certifications/CompTIA_Security.png";
 import cerificate3 from "../../assets/certifications/Generative-AI.jpg";
@@ -29,6 +32,10 @@ const Certifications = () => {
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
   const [showAll, setShowAll] = useState(false);
+
+  // modal states
+  const [open, setOpen] = useState(false);
+  const [selectedCert, setSelectedCert] = useState(null);
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -87,7 +94,7 @@ const Certifications = () => {
     {
       id: 7,
       img: CBRE_Project,
-      title: "Project	Management	Job	Simulation",
+      title: "Project Management Job Simulation",
       desc: "CBRE",
       year: "2024",
       button: "View",
@@ -95,7 +102,7 @@ const Certifications = () => {
     {
       id: 8,
       img: Discover_Professional,
-      title: "Professional	Skills	Job	Simulation",
+      title: "Professional Skills Job Simulation",
       desc: "DISCOVER",
       year: "2024",
       button: "View",
@@ -103,7 +110,7 @@ const Certifications = () => {
     {
       id: 9,
       img: Pepsico,
-      title: "Sales	Job	Simulation",
+      title: "Sales Job Simulation",
       desc: "PEPSICO",
       year: "2025",
       button: "View",
@@ -111,7 +118,7 @@ const Certifications = () => {
     {
       id: 10,
       img: Pwc,
-      title: "Management	Consulting	Simulation",
+      title: "Management Consulting Simulation",
       desc: "PWC",
       year: "2025",
       button: "View",
@@ -119,7 +126,7 @@ const Certifications = () => {
     {
       id: 11,
       img: Red_Bull,
-      title: "On-Premise	Sales	Job	Simulation",
+      title: "On-Premise Sales Job Simulation",
       desc: "RedBull",
       year: "2025",
       button: "View",
@@ -127,7 +134,7 @@ const Certifications = () => {
     {
       id: 12,
       img: Lululemon,
-      title: "Omnichannel	Marketing	Job	Simulation",
+      title: "Omnichannel Marketing Job Simulation",
       desc: "Lululemon",
       year: "2024",
       button: "View",
@@ -162,6 +169,11 @@ const Certifications = () => {
   ];
 
   const displayedCerts = showAll ? certifications : certifications.slice(0, 3);
+
+  const handleModal = (cert) => {
+    setSelectedCert(cert);
+    setOpen(true);
+  };
 
   return (
     <div className="sm:bg-Bg-Neutral-White sm:py-3">
@@ -235,7 +247,10 @@ const Certifications = () => {
                         <span className="border-l h-5"></span>
                         {cert.year}
                       </p>
-                      <button className="text-base text-Text-Brand-Primary">
+                      <button
+                        onClick={() => handleModal(cert)}
+                        className="text-base text-Text-Brand-Primary"
+                      >
                         {cert.button}
                       </button>
                     </div>
@@ -276,7 +291,10 @@ const Certifications = () => {
                       <span className="border-l h-5"></span>
                       {cert.year}
                     </p>
-                    <button className="text-base text-Text-Brand-Primary">
+                    <button
+                      onClick={() => handleModal(cert)}
+                      className="text-base text-Text-Brand-Primary"
+                    >
                       {cert.button}
                     </button>
                   </div>
@@ -299,6 +317,27 @@ const Certifications = () => {
           </div>
         </div>
       </div>
+
+      {/* React Modal */}
+      <Modal
+        open={open}
+        onClose={() => {
+          setOpen(false);
+          setSelectedCert(null);
+        }}
+        center
+      >
+        {selectedCert && (
+          <div className="text-center">
+            <h2 className="text-xl font-semibold mb-3">{selectedCert.title}</h2>
+            <img
+              src={selectedCert.img}
+              alt={selectedCert.title}
+              className="w-full h-auto rounded-lg mb-4 border border-Text-Neutral-Secondary shadow"
+            />
+          </div>
+        )}
+      </Modal>
     </div>
   );
 };
