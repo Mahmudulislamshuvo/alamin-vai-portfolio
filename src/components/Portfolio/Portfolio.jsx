@@ -12,6 +12,7 @@ import pic1 from "../../assets/portfolio/Deep_Malware_Detection.png";
 import pic2 from "../../assets/portfolio/Dual-Phase.png";
 import pic3 from "../../assets/portfolio/self-Supervised.png";
 import Modal from "react-responsive-modal";
+import { CgCloseO } from "react-icons/cg";
 
 const Portfolio = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -62,6 +63,8 @@ const Portfolio = () => {
     setSelectedCert(cert);
     setOpen(true);
   };
+
+  const closeIcon = <CgCloseO className="w-8 h-8 text-red-500" />;
 
   return (
     <div className="container mx-auto relative">
@@ -133,7 +136,7 @@ const Portfolio = () => {
                     </p>
                     <button
                       onClick={() => handleModal(cert)}
-                      className="text-base text-Text-Brand-Primary"
+                      className="text-base text-Text-Brand-Primary cursor-pointer"
                     >
                       {cert.button}
                     </button>
@@ -205,6 +208,7 @@ const Portfolio = () => {
           setSelectedCert(null);
         }}
         center
+        closeIcon={closeIcon}
       >
         {selectedCert && (
           <div className="text-center">

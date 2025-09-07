@@ -26,6 +26,7 @@ import Red_Bull from "../../assets/certifications/Red_Bull.png";
 import dualFace from "../../assets/certifications/Dual-Phase.png";
 import Deep_Malware_Detection from "../../assets/certifications/Deep_Malware_Detection.png";
 import self_Supervised from "../../assets/certifications/self-Supervised.png";
+import { CgCloseO } from "react-icons/cg";
 
 const Certifications = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -175,6 +176,8 @@ const Certifications = () => {
     setOpen(true);
   };
 
+  const closeIcon = <CgCloseO className="w-8 h-8 text-red-500" />;
+
   return (
     <div className="sm:bg-Bg-Neutral-White sm:py-3">
       <div className="container mx-auto relative max-xs:bg-Bg-Brand-Tertiary">
@@ -249,7 +252,7 @@ const Certifications = () => {
                       </p>
                       <button
                         onClick={() => handleModal(cert)}
-                        className="text-base text-Text-Brand-Primary"
+                        className="text-base text-Text-Brand-Primary cursor-pointer"
                       >
                         {cert.button}
                       </button>
@@ -326,6 +329,7 @@ const Certifications = () => {
           setSelectedCert(null);
         }}
         center
+        closeIcon={closeIcon}
       >
         {selectedCert && (
           <div className="text-center">

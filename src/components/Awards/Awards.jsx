@@ -14,6 +14,7 @@ import cerificate3 from "../../assets/awardsMembership/IEEE-MEMBERSHIP3.jpg";
 import cerificate4 from "../../assets/awardsMembership/IEEE-COMPUTER-SOCITY-MEMBERSHIP4.jpg";
 import cerificate5 from "../../assets/awardsMembership/IEEE-Young-Professional5.jpg";
 import Modal from "react-responsive-modal";
+import { CgCloseO } from "react-icons/cg";
 
 const Awards = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -77,6 +78,8 @@ const Awards = () => {
     setSelectedCert(cert);
     setOpen(true);
   };
+
+  const closeIcon = <CgCloseO className="w-8 h-8 text-red-500" />;
 
   return (
     <div className="bg-Bg-Neutral-White sm:bg-Bg-Neutral-Secondary md:bg-Bg-Neutral-Secondary lg:bg-Bg-Neutral-White max-xs:bg-Bg-Neutral-Secondary ">
@@ -153,7 +156,7 @@ const Awards = () => {
                         </p>
                         <button
                           onClick={() => handleModal(cert)}
-                          className="text-base text-Text-Brand-Primary"
+                          className="text-base text-Text-Brand-Primary cursor-pointer"
                         >
                           {cert.button}
                         </button>
@@ -219,6 +222,7 @@ const Awards = () => {
           setSelectedCert(null);
         }}
         center
+        closeIcon={closeIcon}
       >
         {selectedCert && (
           <div className="text-center">
