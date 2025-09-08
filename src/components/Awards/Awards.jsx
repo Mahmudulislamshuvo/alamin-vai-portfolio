@@ -93,29 +93,32 @@ const Awards = () => {
           </div>
           {/* For desktop and others Devices */}
           <div className="max-xs:hidden">
-            <div className="absolute top-1/2 -left-10 z-10">
-              <button
-                ref={prevRef}
-                className={`text-3xl text-Text-Neutral-Primary ${
-                  isBeginning ? "opacity-35 cursor-not-allowed" : ""
-                }`}
-                onClick={() => swiperInstance?.slidePrev()}
-                disabled={isBeginning}
-              >
-                <IoIosArrowBack />
-              </button>
-            </div>
-            <div className="absolute top-1/2 -right-10 z-10">
-              <button
-                ref={nextRef}
-                className={`text-3xl text-Text-Neutral-Primary ${
-                  isEnd ? "opacity-35 cursor-not-allowed" : ""
-                }`}
-                onClick={() => swiperInstance?.slideNext()}
-                disabled={isEnd}
-              >
-                <IoIosArrowForward />
-              </button>
+            {/* Arrow buttons only for lg and above */}
+            <div className="hidden lg:block">
+              <div className="absolute top-1/2 -left-10 z-10">
+                <button
+                  ref={prevRef}
+                  className={`text-3xl text-Text-Neutral-Primary ${
+                    isBeginning ? "opacity-35 cursor-not-allowed" : ""
+                  }`}
+                  onClick={() => swiperInstance?.slidePrev()}
+                  disabled={isBeginning}
+                >
+                  <IoIosArrowBack />
+                </button>
+              </div>
+              <div className="absolute top-1/2 -right-10 z-10">
+                <button
+                  ref={nextRef}
+                  className={`text-3xl text-Text-Neutral-Primary ${
+                    isEnd ? "opacity-35 cursor-not-allowed" : ""
+                  }`}
+                  onClick={() => swiperInstance?.slideNext()}
+                  disabled={isEnd}
+                >
+                  <IoIosArrowForward />
+                </button>
+              </div>
             </div>
 
             <Swiper
