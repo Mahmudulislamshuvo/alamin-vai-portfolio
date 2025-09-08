@@ -69,7 +69,7 @@ const SkillsAndTools = () => {
             header={"Skills & Tools"}
           />
         </div>
-        <div className="flex flex-col sm:flex-col md:flex-row gap-y-4 md:gap-x-11">
+        <div className="flex flex-col sm:flex-col md:flex-col lg:flex-wrap xl:flex-row gap-y-4 md:gap-x-11">
           <SkillsPercentage skills={skills} />
         </div>
       </div>

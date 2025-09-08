@@ -27,7 +27,8 @@ const Navbar = ({ scrollToSection, refs }) => {
         </div>
 
         {/* Menu for desktop */}
-        <div className="hidden md:flex md:flex-1 md:items-center md:justify-between">
+        {/* Menu for desktop (only visible on lg and above) */}
+        <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-between">
           <ul className="flex gap-x-6 mx-auto">
             {NavData.map((item) => (
               <li key={item.id}>
@@ -45,6 +46,16 @@ const Navbar = ({ scrollToSection, refs }) => {
             className="text-white font-medium rounded-[100px] text-[16px] px-6 py-3 text-center bg-Text-Brand-Primary"
           >
             Download CV
+          </button>
+        </div>
+
+        {/* Mobile Hamburger Button (visible up to md, hidden on lg+) */}
+        <div className="lg:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-3xl text-Text-Neutral-Primary focus:outline-none"
+          >
+            {isOpen ? <IoMdClose /> : <IoMdMenu />}
           </button>
         </div>
 

@@ -14,7 +14,7 @@ const PublishedReserach = ({
     <>
       <div className="border border-Bg-Neutral-Secondary w-[49%] p-5 rounded-lg max-xs:w-full max-xs:p-3 max-xs:bg-Bg-Neutral-White max-sm:w-full">
         <div className="border-b border-Bg-Neutral-Secondary py-4">
-          <img src={image} alt={image} />
+          <img src={image} alt={image} className="w-full h-auto object-cover" />
           <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4">
             <a target="_blank" rel="noopener noreferrer" href={linkbtn}>
               {title}
@@ -37,7 +37,7 @@ const PublishedReserach = ({
             {ConferencePaper ? ConferencePaper : publish}
           </p>
           <div className="flex flex-col gap-y-2 sm:flex-col md:flex-row md:justify-between pt-2">
-            <div className="text-Text-Neutral-Tertiary flex flex-col sm:flex-col md:flex-row md:gap-x-4">
+            <div className="text-Text-Neutral-Tertiary flex flex-col sm:flex-col md:flex-wrap lg:flex-row md:gap-x-4">
               <span>{year}</span>
               <span className="text-Text-Neutral-Tertiary">{papername}</span>
               <span>
