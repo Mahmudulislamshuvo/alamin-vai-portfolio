@@ -17,7 +17,7 @@ const Navbar = ({ scrollToSection, refs }) => {
 
   return (
     <nav className="bg-Bg-Neutral-Primary shadow">
-      <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-4 sm:px-4">
+      <div className="flex items-center justify-between mx-auto px-6 py-4 sm:px-4">
         {/* Brand */}
         <div
           className="text-2xl text-Text-Neutral-Primary md:mr-10 cursor-pointer"
@@ -26,15 +26,14 @@ const Navbar = ({ scrollToSection, refs }) => {
           Md Al Amin
         </div>
 
-        {/* Menu for desktop */}
         {/* Menu for desktop (only visible on lg and above) */}
         <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-between">
-          <ul className="flex gap-x-6 mx-auto">
+          <ul className="flex gap-x-6 lg:gap-x-0 xl:gap-x-6 mx-auto">
             {NavData.map((item) => (
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.target)}
-                  className="block py-2 px-3 text-Text-Neutral-Primary hover:bg-Bg-SemanticWarning-Subtle hover:text-Text-Brand-Primary rounded-[6px] transition-all duration-300 ease-in-out"
+                  className="block py-2 px-3 lg:px-2 xl:px-3 text-Text-Neutral-Primary hover:bg-Bg-SemanticWarning-Subtle hover:text-Text-Brand-Primary rounded-[6px] transition-all duration-300 ease-in-out"
                 >
                   {item.name}
                 </button>
