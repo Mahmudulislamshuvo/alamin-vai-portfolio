@@ -69,8 +69,18 @@ const SkillsAndTools = () => {
             header={"Skills & Tools"}
           />
         </div>
-        <div className="flex flex-col sm:flex-col md:flex-col lg:flex-wrap xl:flex-row gap-y-4 md:gap-x-11">
-          <SkillsPercentage skills={skills} />
+
+        {/* Css issue somehow adjust */}
+        <div className="xl:hidden">
+          <div className="flex flex-col sm:flex-col md:flex-col lg:flex-wrap xl:flex-row gap-y-4 md:gap-x-11">
+            <SkillsPercentage skills={skills} />
+          </div>
+        </div>
+
+        <div className="sm:hidden xl:block">
+          <div className="flex gap-x-11 max-xs:gap-y-3 max-xs:gap-x-0 max-xs:flex-col max-sm:flex-col sm:gap-y-4">
+            <SkillsPercentage skills={skills} />
+          </div>
         </div>
       </div>
     </div>
