@@ -7,7 +7,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import cerificate1 from "../../assets/awardsMembership/PMI-Member1.jpg";
 import cerificate2 from "../../assets/awardsMembership/IIBA-Membership2.jpg";
 import cerificate3 from "../../assets/awardsMembership/IEEE-MEMBERSHIP3.jpg";
@@ -20,7 +19,6 @@ const Awards = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
-  const [showAll, setShowAll] = useState(false);
 
   // modal states
   const [open, setOpen] = useState(false);
@@ -33,7 +31,6 @@ const Awards = () => {
     {
       id: 1,
       img: cerificate1,
-      // title: "Full Stack Developer",
       desc: "PMI",
       year: "2024",
       button: "View",
@@ -41,7 +38,6 @@ const Awards = () => {
     {
       id: 2,
       img: cerificate2,
-      // title: "Full Stack Developer",
       desc: "IIBA",
       year: "2025",
       button: "View",
@@ -49,7 +45,6 @@ const Awards = () => {
     {
       id: 3,
       img: cerificate3,
-      // title: "Full Stack Developer",
       desc: "IEEE",
       year: "2025",
       button: "View",
@@ -57,22 +52,18 @@ const Awards = () => {
     {
       id: 4,
       img: cerificate4,
-      // title: "Full Stack Developer",
       desc: "IEEE",
       year: "2025",
       button: "View",
     },
     {
-      id: 4,
+      id: 5,
       img: cerificate5,
-      // title: "Full Stack Developer",
       desc: "IEEE",
       year: "2025",
       button: "View",
     },
   ];
-
-  const displayedCerts = showAll ? certifications : certifications.slice(0, 3);
 
   const handleModal = (cert) => {
     setSelectedCert(cert);
@@ -82,7 +73,7 @@ const Awards = () => {
   const closeIcon = <CgCloseO className="w-8 h-8 text-red-500" />;
 
   return (
-    <div className="bg-Bg-Neutral-White sm:bg-Bg-Neutral-Secondary md:bg-Bg-Neutral-Secondary lg:bg-Bg-Neutral-White max-xs:bg-Bg-Neutral-Secondary ">
+    <div className="bg-Bg-Neutral-White sm:bg-Bg-Neutral-Secondary md:bg-Bg-Neutral-Secondary lg:bg-Bg-Neutral-White max-xs:bg-Bg-Neutral-Secondary">
       <div className="container mx-auto">
         <div className="py-20 lg:py-[120px] relative max-xs:py-9 px-3 md:py-0">
           <div className="pb-10 md:pb-[80px] max-xs:px-3 max-xs:pb-6">
@@ -91,100 +82,62 @@ const Awards = () => {
               header={"Awards and Membership"}
             />
           </div>
-          {/* For desktop and others Devices */}
-          <div className="max-xs:hidden">
-            {/* Arrow buttons only for lg and above */}
-            <div className="hidden lg:block">
-              <div className="absolute top-1/2 -left-10 z-10">
-                <button
-                  ref={prevRef}
-                  className={`text-3xl text-Text-Neutral-Primary ${
-                    isBeginning ? "opacity-35 cursor-not-allowed" : ""
-                  }`}
-                  onClick={() => swiperInstance?.slidePrev()}
-                  disabled={isBeginning}
-                >
-                  <IoIosArrowBack />
-                </button>
-              </div>
-              <div className="absolute top-1/2 -right-10 z-10">
-                <button
-                  ref={nextRef}
-                  className={`text-3xl text-Text-Neutral-Primary ${
-                    isEnd ? "opacity-35 cursor-not-allowed" : ""
-                  }`}
-                  onClick={() => swiperInstance?.slideNext()}
-                  disabled={isEnd}
-                >
-                  <IoIosArrowForward />
-                </button>
-              </div>
-            </div>
 
-            <Swiper
-              modules={[Navigation, Pagination, Scrollbar, A11y]}
-              spaceBetween={40}
-              slidesPerView={3}
-              onSwiper={(swiper) => setSwiperInstance(swiper)}
-              onSlideChange={(swiper) => {
-                setIsBeginning(swiper.isBeginning);
-                setIsEnd(swiper.isEnd);
-              }}
-              pagination={{ clickable: true }}
-              breakpoints={{
-                320: { slidesPerView: 1, spaceBetween: 20 },
-                768: { slidesPerView: 2, spaceBetween: 30 },
-                1024: { slidesPerView: 3, spaceBetween: 40 },
-              }}
-            >
-              {certifications.map((cert, index) => (
-                <SwiperSlide key={index}>
-                  <div className="bg-white rounded-xl border border-[#E9E8E8]">
-                    <img
-                      src={cert.img}
-                      alt={cert.img}
-                      className="w-full h-70 rounded-lg"
-                    />
-                    <div className="px-6">
-                      {cert.title && (
-                        <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4 pb-2">
-                          {cert.title}
-                        </h4>
-                      )}
-                      <div className="flex justify-between items-center pb-6">
-                        <p className="flex items-center gap-2 text-base text-Text-Neutral-Tertiary">
-                          {cert.desc}
-                          <span className="border-l h-5"></span>
-                          {cert.year}
-                        </p>
-                        <button
-                          onClick={() => handleModal(cert)}
-                          className="text-base text-Text-Brand-Primary cursor-pointer"
-                        >
-                          {cert.button}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+          {/* Arrow buttons only for lg and above */}
+          <div className="hidden lg:block">
+            <div className="absolute top-1/2 -left-10 z-10">
+              <button
+                ref={prevRef}
+                className={`text-3xl text-Text-Neutral-Primary ${
+                  isBeginning ? "opacity-35 cursor-not-allowed" : ""
+                }`}
+                onClick={() => swiperInstance?.slidePrev()}
+                disabled={isBeginning}
+              >
+                <IoIosArrowBack />
+              </button>
+            </div>
+            <div className="absolute top-1/2 -right-10 z-10">
+              <button
+                ref={nextRef}
+                className={`text-3xl text-Text-Neutral-Primary ${
+                  isEnd ? "opacity-35 cursor-not-allowed" : ""
+                }`}
+                onClick={() => swiperInstance?.slideNext()}
+                disabled={isEnd}
+              >
+                <IoIosArrowForward />
+              </button>
+            </div>
           </div>
-          {/* =========For mobile device only========== */}
-          <div className="sm:hidden max-xs:p-3 flex flex-col gap-y-3">
-            {displayedCerts.map((cert) => (
-              <div key={cert.id}>
+
+          {/* Swiper - works on all devices */}
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={40}
+            slidesPerView={3}
+            onSwiper={(swiper) => setSwiperInstance(swiper)}
+            onSlideChange={(swiper) => {
+              setIsBeginning(swiper.isBeginning);
+              setIsEnd(swiper.isEnd);
+            }}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              320: { slidesPerView: 1, spaceBetween: 20 },
+              768: { slidesPerView: 2, spaceBetween: 30 },
+              1024: { slidesPerView: 3, spaceBetween: 40 },
+            }}
+          >
+            {certifications.map((cert, index) => (
+              <SwiperSlide key={index}>
                 <div className="bg-white rounded-xl border border-[#E9E8E8]">
                   <img
                     src={cert.img}
-                    alt={cert.title}
-                    className="w-full h-70 object-cover rounded-lg"
+                    alt={cert.desc}
+                    className="w-full h-70 rounded-lg"
                   />
                   <div className="px-6">
-                    <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4 pb-2">
-                      {cert.title}
-                    </h4>
-                    <div className="flex justify-between items-center pb-6">
+                    <div className="flex justify-between items-center pb-6 pt-4">
                       <p className="flex items-center gap-2 text-base text-Text-Neutral-Tertiary">
                         {cert.desc}
                         <span className="border-l h-5"></span>
@@ -192,31 +145,19 @@ const Awards = () => {
                       </p>
                       <button
                         onClick={() => handleModal(cert)}
-                        className="text-base text-Text-Brand-Primary"
+                        className="text-base text-Text-Brand-Primary cursor-pointer"
                       >
                         {cert.button}
                       </button>
                     </div>
                   </div>
                 </div>
-              </div>
+              </SwiperSlide>
             ))}
-
-            {/* Toggle Button */}
-            {certifications.length > 3 && (
-              <button
-                onClick={() => setShowAll(!showAll)}
-                className="flex items-center justify-center gap-2 text-Text-Brand-Primary text-lg"
-              >
-                {showAll ? "Show Less" : "View All"}
-                <span>
-                  {showAll ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
-                </span>
-              </button>
-            )}
-          </div>
+          </Swiper>
         </div>
       </div>
+
       {/* React Modal */}
       <Modal
         open={open}
@@ -229,10 +170,12 @@ const Awards = () => {
       >
         {selectedCert && (
           <div className="text-center">
-            <h2 className="text-xl font-semibold mb-3">{selectedCert.title}</h2>
+            <h2 className="text-xl font-semibold mb-3">
+              {selectedCert.desc} {selectedCert.year}
+            </h2>
             <img
               src={selectedCert.img}
-              alt={selectedCert.title}
+              alt={selectedCert.desc}
               className="w-full h-auto rounded-lg mb-4 border border-Text-Neutral-Secondary shadow"
             />
           </div>
