@@ -84,8 +84,8 @@ const Awards = () => {
   return (
     <div className="bg-Bg-Neutral-White sm:bg-Bg-Neutral-Secondary md:bg-Bg-Neutral-Secondary lg:bg-Bg-Neutral-White max-xs:bg-Bg-Neutral-Secondary ">
       <div className="container mx-auto">
-        <div className="py-[120px] relative max-xs:py-9">
-          <div className="pb-[80px] max-xs:px-3 max-xs:pb-6">
+        <div className="py-20 lg:py-[120px] relative max-xs:py-9 px-3 md:py-0">
+          <div className="pb-10 md:pb-[80px] max-xs:px-3 max-xs:pb-6">
             <PageHeader
               title={"HONORS & ACHIEVEMENTS"}
               header={"Awards and Membership"}

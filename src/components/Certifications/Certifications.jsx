@@ -197,7 +197,7 @@ const Certifications = () => {
           </div>
 
           {/* Custom navigation buttons */}
-          <div className="sm:hidden lg:block">
+          <div className="hidden lg:block">
             <div className="absolute top-1/2 -left-10 z-10">
               <button
                 ref={prevRef}

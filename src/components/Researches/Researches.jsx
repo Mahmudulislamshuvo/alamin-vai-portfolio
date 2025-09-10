@@ -135,8 +135,8 @@ const Researches = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="py-[120px] max-xs:py-9 max-xs:bg-Bg-Neutral-Secondary">
-        <div className="pb-[80px] max-xs:pb-6 max-xs:px-3 sm:pb-6 sm:px-2">
+      <div className="p-5 md:[120px] max-xs:bg-Bg-Neutral-Secondary">
+        <div className="pb-10 md:pb-[80px] max-xs:pb-6 max-xs:px-3 sm:pb-6 sm:px-2">
           <PageHeader
             title={"CURRENT PROJECTS & RELATED PUBLICATIONS"}
             header={"Researches"}
@@ -144,7 +144,7 @@ const Researches = () => {
         </div>
 
         {/* Published Researches */}
-        <div className="pt-10 max-xs:pt-1">
+        <div className="pt-2 md:pt-10 max-xs:pt-1">
           <h3 className="text-4xl font-semibold text-Text-Brand-Primary pb-7 max-xs:gap-y-3 max-xs:px-3 sm:font-medium sm:text-2xl sm:px-2">
             PUBLISHED RESEARCHES
           </h3>

@@ -75,7 +75,19 @@ const App = () => {
       <div ref={contactRef}>
         <ContactForm />
       </div>
-      <Footer />
+      <Footer
+        scrollToSection={scrollToSection}
+        refs={{
+          homeRef,
+          aboutRef,
+          researchRef,
+          educationRef,
+          experienceRef,
+          skillsRef,
+          portfolioRef,
+          contactRef,
+        }}
+      />
     </div>
   );
 };

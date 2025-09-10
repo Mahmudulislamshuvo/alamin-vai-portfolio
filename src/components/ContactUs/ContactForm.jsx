@@ -7,9 +7,9 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const ContactForm = () => {
   return (
-    <div className="py-[120px] max-xs:py-9 max-xs:bg-Bg-Neutral-Secondary">
-      <div className="container mx-auto max-xs:p-3">
-        <div className="pb-[80px] max-xs:pb-6 sm:pb-6">
+    <div className="py-20 md:py-[80px] lg:py-[120px] max-xs:py-9 max-xs:bg-Bg-Neutral-Secondary">
+      <div className="container mx-auto px-3 md:px-0">
+        <div className="pb-10 md:pb-[80px]">
           <PageHeader title={"LET'S CONNECT"} header={"Contact"} />
         </div>
 

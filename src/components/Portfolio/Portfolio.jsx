@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import PageHeader from "../CommonCoponents/PageHeader";
-import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import pic1 from "../../assets/portfolio/Deep_Malware_Detection.png";
 import pic2 from "../../assets/portfolio/Dual-Phase.png";
 import pic3 from "../../assets/portfolio/self-Supervised.png";
@@ -19,7 +18,6 @@ const Portfolio = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
-  const [showAll, setShowAll] = useState(false);
 
   // modal states
   const [open, setOpen] = useState(false);
@@ -67,8 +65,6 @@ const Portfolio = () => {
     },
   ];
 
-  const displayedCerts = showAll ? certifications : certifications.slice(0, 3);
-
   const handleModal = (cert) => {
     setSelectedCert(cert);
     setOpen(true);
@@ -78,8 +74,8 @@ const Portfolio = () => {
 
   return (
     <div className="container mx-auto relative">
-      <div className="bg-Bg-Brand-Tertiary px-[40px] md:px-[100px] py-[80px] rounded-xl max-xs:hidden">
-        <div className="mb-12 ">
+      <div className="bg-Bg-Brand-Tertiary px-[40px] md:px-[100px] py-[80px] rounded-xl">
+        <div className="mb-12">
           <PageHeader title={"PROJECTS & CONTRIBUTIONS"} header={"Portfolio"} />
         </div>
 
@@ -143,7 +139,6 @@ const Portfolio = () => {
                   <div className="flex justify-between items-center pb-6">
                     <p className="flex items-center gap-2 text-base text-Text-Neutral-Tertiary">
                       {cert.desc}
-                      {/* <span className="border-l h-5"></span> */}
                       <span className="border-l h-5"> {cert.year}</span>
                     </p>
                     <button
@@ -159,59 +154,7 @@ const Portfolio = () => {
           ))}
         </Swiper>
       </div>
-      {/* Only for mobile device */}
-      <div className="block sm:hidden max-xs:p-3 bg-Bg-Brand-Tertiary">
-        <div className="mb-12 max-xs:mb-6">
-          <PageHeader title={"PROJECTS & CONTRIBUTIONS"} header={"Portfolio"} />
-        </div>
 
-        {/* Cards container with gap */}
-        <div className="flex flex-col gap-y-3">
-          {displayedCerts.map((cert) => (
-            <div
-              key={cert.id}
-              className="bg-Bg-Brand-Secondary rounded-xl max-xs:p-3"
-            >
-              <img
-                src={cert.img}
-                alt={cert.title}
-                className="w-full h-70 object-cover rounded-lg"
-              />
-              <div className="px-6">
-                <h4 className="text-xl font-semibold text-Text-Neutral-Primary pt-4 pb-2">
-                  {cert.title}
-                </h4>
-                <div className="flex justify-between items-center pb-6">
-                  <p className="flex items-center gap-2 text-base text-Text-Neutral-Tertiary">
-                    {cert.desc}
-                    <span className="border-l h-5"></span>
-                    {cert.year}
-                  </p>
-                  <button
-                    onClick={() => handleModal(cert)}
-                    className="text-base text-Text-Brand-Primary"
-                  >
-                    {cert.button}
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-
-          {/* Toggle Button */}
-          {certifications.length > 3 && (
-            <button
-              onClick={() => setShowAll(!showAll)}
-              className="flex items-center justify-center gap-2 text-Text-Brand-Primary text-lg"
-            >
-              {showAll ? "Show Less" : "View All"}
-              <span>
-                {showAll ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
-              </span>
-            </button>
-          )}
-        </div>
-      </div>
       {/* React Modal */}
       <Modal
         open={open}

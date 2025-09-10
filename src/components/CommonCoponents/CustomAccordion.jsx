@@ -15,7 +15,7 @@ const CustomAccordion = ({ experienceData = [] }) => {
           key={project.id}
           className="mb-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
         >
-          <div className="bg-Bg-Brand-Secondary rounded-2xl p-8">
+          <div className="bg-Bg-Brand-Secondary rounded-2xl p-4 md:p-8">
             <div
               className="flex justify-between items-center cursor-pointer"
               onClick={() => handleOpen(project.id)}
@@ -26,21 +26,21 @@ const CustomAccordion = ({ experienceData = [] }) => {
                     <img
                       src={project.icon}
                       alt={"CompanyIcon"}
-                      className="h-auto w-25 object-cover"
+                      className="h-auto w-15 md:w-25 object-cover"
                     />
                     <div className="flex flex-col justify-start items-start">
-                      <h3 className="text-3xl font-semibold text-Text-Neutral-Primary max-xs:text-lg max-xs:font-medium">
+                      <h3 className="text-sm md:text-3xl font-semibold text-Text-Neutral-Primary max-xs:text-lg max-xs:font-medium">
                         {project.title}
                       </h3>
-                      <p className="text-xl text-Text-Neutral-Tertiary max-xs:text-base max-xs:font-medium">
+                      <p className="text-sm md:text-xl text-Text-Neutral-Tertiary max-xs:text-base max-xs:font-medium">
                         {project.subtitle}
                       </p>
-                      <span className="text-sm font-medium text-gray-500 tracking-wide text-start pr-5 max-xs:text-base max-xs:font-normal sm:hidden">
+                      <span className="text-[10px] md:text-sm font-medium text-gray-500 tracking-wide text-start pr-5 max-xs:text-base max-xs:font-normal sm:hidden">
                         {project.period}
                       </span>
                     </div>
                   </div>
-                  <span className="text-sm font-medium text-gray-500 tracking-wide text-start pr-5 max-xs:text-base max-xs:font-normal max-xs:hidden">
+                  <span className="text-[10px] md:text-sm font-medium text-gray-500 tracking-wide text-start pr-5 max-xs:text-base max-xs:font-normal max-xs:hidden">
                     {project.period}
                   </span>
                 </div>

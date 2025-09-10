@@ -6,18 +6,32 @@ import googleSchooler from "../../assets/footer/Google_Scholar_logo.svg";
 import linkedin from "../../assets/footer/linkedin-svgrepo-com.svg";
 import orcid from "../../assets/footer/ORCID_iD.svg";
 
-const Footer = () => {
+const Footer = ({ scrollToSection, refs }) => {
+  const NavData = [
+    { id: 1, name: "Home", target: refs.homeRef },
+    { id: 2, name: "About Me", target: refs.aboutRef },
+    { id: 3, name: "Research", target: refs.researchRef },
+    { id: 4, name: "Education", target: refs.educationRef },
+    { id: 5, name: "Experience", target: refs.experienceRef },
+    { id: 6, name: "Skills", target: refs.skillsRef },
+    { id: 7, name: "Portfolio", target: refs.portfolioRef },
+    { id: 8, name: "Contact", target: refs.contactRef },
+  ];
+
   return (
     <div
       className="p-3 bg-Bg-Brand-Dark flex flex-col gap-y-10
-  sm:px-10 sm:py-8 sm:flex-col
-  md:px-16 md:py-12 md:flex-row md:justify-between md:items-start
-  lg:px-20 lg:py-16
-  xl:px-[100px] xl:py-[80px] xl:gap-x-15"
+        sm:px-10 sm:py-8 sm:flex-col
+        md:px-16 md:py-12 md:flex-row md:justify-between md:items-start
+        lg:px-20 lg:py-16
+        xl:px-[100px] xl:py-[80px] xl:gap-x-15"
     >
       {/* Left side */}
       <div className="w-full md:w-[40%]">
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-Bg-Neutral-White pb-3 sm:pb-4 md:pb-5">
+        <h3
+          className="text-2xl sm:text-3xl md:text-4xl font-semibold text-Bg-Neutral-White pb-3 sm:pb-4 md:pb-5 cursor-pointer"
+          onClick={() => scrollToSection(refs.homeRef)}
+        >
           Md Al Amin
         </h3>
         <p className="text-sm sm:text-base text-Text-Brand-Inverse">
@@ -36,20 +50,32 @@ const Footer = () => {
             Quick Links
           </h4>
           <ul className="text-base sm:text-lg text-Text-Brand-Inverse flex flex-col gap-y-3 sm:gap-y-5">
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Research</li>
-            <li>Education</li>
+            {NavData.slice(0, 4).map((item) => (
+              <li key={item.id}>
+                <button
+                  onClick={() => scrollToSection(item.target)}
+                  className="hover:text-Text-Brand-Primary transition-colors duration-300"
+                >
+                  {item.name}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Second Links */}
         <div>
           <ul className="text-base sm:text-lg text-Text-Brand-Inverse flex flex-col gap-y-3 sm:gap-y-5">
-            <li>Experience</li>
-            <li>Skills</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            {NavData.slice(4).map((item) => (
+              <li key={item.id}>
+                <button
+                  onClick={() => scrollToSection(item.target)}
+                  className="hover:text-Text-Brand-Primary transition-colors duration-300"
+                >
+                  {item.name}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
 

@@ -61,9 +61,9 @@ const SkillsAndTools = () => {
   ];
 
   return (
-    <div className="py-[120px] max-xs:py-9 max-xs:bg-Bg-Neutral-Secondary max-xs:px-3">
+    <div className="py-20 px-2 md:py-[120px] md:px-0">
       <div className="container mx-auto">
-        <div className="pb-[80px] max-xs:pb-6 sm:pb-8">
+        <div className="pb-10 md:pb-[80px] max-xs:pb-6 sm:pb-8">
           <PageHeader
             title={"TECHNICAL EXPERTISE & METHODS"}
             header={"Skills & Tools"}
@@ -77,7 +77,7 @@ const SkillsAndTools = () => {
           </div>
         </div>
 
-        <div className="sm:hidden xl:block">
+        <div className="max-sm:hidden sm:hidden xl:block">
           <div className="flex gap-x-11 max-xs:gap-y-3 max-xs:gap-x-0 max-xs:flex-col max-sm:flex-col sm:gap-y-4">
             <SkillsPercentage skills={skills} />
           </div>
