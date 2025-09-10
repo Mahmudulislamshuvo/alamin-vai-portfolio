@@ -49,14 +49,14 @@ const Navbar = ({ scrollToSection, refs }) => {
         </div>
 
         {/* Mobile Hamburger Button (visible up to md, hidden on lg+) */}
-        <div className="lg:hidden">
+        {/* <div className="hidden lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-3xl text-Text-Neutral-Primary focus:outline-none"
           >
             {isOpen ? <IoMdClose /> : <IoMdMenu />}
           </button>
-        </div>
+        </div> */}
 
         {/* Mobile Hamburger Button */}
         <div className="md:hidden">
