@@ -11,6 +11,7 @@ import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import pic1 from "../../assets/portfolio/Deep_Malware_Detection.png";
 import pic2 from "../../assets/portfolio/Dual-Phase.png";
 import pic3 from "../../assets/portfolio/self-Supervised.png";
+import pic4 from "../../assets/certifications/88.png";
 import Modal from "react-responsive-modal";
 import { CgCloseO } from "react-icons/cg";
 
@@ -51,6 +52,15 @@ const Portfolio = () => {
       img: pic2,
       title:
         "Acceptance letter A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
+      desc: "IEEE",
+      year: "2025",
+      button: "View",
+    },
+    {
+      id: 4,
+      img: pic4,
+      title:
+        "Certificate of Participation- MoraleTrack: A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
       desc: "IEEE",
       year: "2025",
       button: "View",
