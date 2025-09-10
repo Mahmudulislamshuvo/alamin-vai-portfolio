@@ -26,6 +26,7 @@ import Red_Bull from "../../assets/certifications/Red_Bull.png";
 import dualFace from "../../assets/certifications/Dual-Phase.png";
 import Deep_Malware_Detection from "../../assets/certifications/Deep_Malware_Detection.png";
 import self_Supervised from "../../assets/certifications/self-Supervised.png";
+import percipation from "../../assets/certifications/88.png";
 import { CgCloseO } from "react-icons/cg";
 
 const Certifications = () => {
@@ -164,6 +165,15 @@ const Certifications = () => {
       title:
         "Presentation Self-Supervised Representation Learning for Human Activity Recognition Using Inertial Sensor Data",
       desc: "IEEE Photonics Society Bangladesh",
+      year: "2025",
+      button: "View",
+    },
+    {
+      id: 16,
+      img: percipation,
+      title:
+        "Certificate of Participation- MoraleTrack: A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
+      desc: "IEEE",
       year: "2025",
       button: "View",
     },
