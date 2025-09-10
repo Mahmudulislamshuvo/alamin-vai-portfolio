@@ -42,7 +42,13 @@ const Navbar = ({ scrollToSection, refs }) => {
           </ul>
           <button
             type="button"
-            className="text-white font-medium rounded-[100px] text-[16px] px-6 py-3 text-center bg-Text-Brand-Primary"
+            onClick={() => {
+              const link = document.createElement("a");
+              link.href = "/cv.pdf"; // public folder
+              link.download = "Md_Al_Amin_CV.pdf";
+              link.click();
+            }}
+            className="text-white font-medium rounded-[100px] text-[16px] px-6 py-3 text-center bg-Text-Brand-Primary cursor-pointer"
           >
             Download CV
           </button>

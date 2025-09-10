@@ -38,7 +38,15 @@ const Banner = () => {
               <button className="font-medium px-[28px] py-3 sm:px-[33px] sm:py-4 text-white bg-Text-Brand-Primary rounded-[100000px] max-xs:w-full">
                 <a href="mailto:alaminhossine@gmail.com">Contact Me</a>
               </button>
-              <button className="font-medium px-[28px] py-3 sm:px-[33px] sm:py-4 text-Text-Brand-Primary border border-Text-Brand-Primary rounded-[100000px] max-xs:w-full">
+              <button
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/cv.pdf"; // public folder
+                  link.download = "Md_Al_Amin_CV.pdf";
+                  link.click();
+                }}
+                className="font-medium px-[28px] py-3 sm:px-[33px] sm:py-4 text-Text-Brand-Primary border border-Text-Brand-Primary rounded-[100000px] max-xs:w-full cursor-pointer"
+              >
                 Download CV
               </button>
             </div>
@@ -82,7 +90,15 @@ const Banner = () => {
             <button className="font-medium px-[28px] py-3 sm:px-[33px] sm:py-4 text-white bg-Text-Brand-Primary rounded-[100000px] max-xs:w-full">
               <a href="mailto:alaminhossine@gmail.com">Contact Me</a>
             </button>
-            <button className="font-medium px-[28px] py-3 sm:px-[33px] sm:py-4 text-Text-Brand-Primary border border-Text-Brand-Primary rounded-[100000px] max-xs:w-full">
+            <button
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/cv.pdf"; // public folder
+                link.download = "Md_Al_Amin_CV.pdf";
+                link.click();
+              }}
+              className="font-medium px-[28px] py-3 sm:px-[33px] sm:py-4 text-Text-Brand-Primary border border-Text-Brand-Primary rounded-[100000px] max-xs:w-full cursor-pointer"
+            >
               Download CV
             </button>
           </div>
