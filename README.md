@@ -8,7 +8,7 @@ Welcome to the official repository for Alamin's personal and professional portfo
 
 <!-- 💡 **Comment for you:** Add your live demo link below! -->
 
-**[Live Demo](https://68c175deb60def2bef8e2a28--ornate-boba-c67f6e.netlify.app/)**
+**[Live Demo](https://mdalamin.it.com/)**
 
 ## 📸 Desktop View
 
