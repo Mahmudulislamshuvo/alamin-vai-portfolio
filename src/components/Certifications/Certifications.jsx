@@ -60,6 +60,15 @@ const Certifications = () => {
     },
     {
       id: 3,
+      img: percipation,
+      title:
+        "Certificate of Participation- MoraleTrack: A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
+      desc: "IEEE",
+      year: "2025",
+      button: "View",
+    },
+    {
+      id: 4,
       img: cerificate2,
       title: "CampTIA Security+",
       desc: "CampTIA",
@@ -68,7 +77,7 @@ const Certifications = () => {
     },
 
     {
-      id: 4,
+      id: 5,
       img: cerificate3,
       title: "Generative AI Overview for Project Managers",
       desc: "PMP",
@@ -77,7 +86,7 @@ const Certifications = () => {
     },
 
     {
-      id: 5,
+      id: 6,
       img: Job_Simulation,
       title: "Management Job Simulation",
       desc: "Accenture",
@@ -85,7 +94,7 @@ const Certifications = () => {
       button: "View",
     },
     {
-      id: 6,
+      id: 7,
       img: AccentureStrategy,
       title: "Strategy Consulting Job Simulation",
       desc: "Accenture",
@@ -93,7 +102,7 @@ const Certifications = () => {
       button: "View",
     },
     {
-      id: 7,
+      id: 8,
       img: CBRE_Project,
       title: "Project Management Job Simulation",
       desc: "CBRE",
@@ -101,7 +110,7 @@ const Certifications = () => {
       button: "View",
     },
     {
-      id: 8,
+      id: 9,
       img: Discover_Professional,
       title: "Professional Skills Job Simulation",
       desc: "DISCOVER",
@@ -109,7 +118,7 @@ const Certifications = () => {
       button: "View",
     },
     {
-      id: 9,
+      id: 10,
       img: Pepsico,
       title: "Sales Job Simulation",
       desc: "PEPSICO",
@@ -117,7 +126,7 @@ const Certifications = () => {
       button: "View",
     },
     {
-      id: 10,
+      id: 11,
       img: Pwc,
       title: "Management Consulting Simulation",
       desc: "PWC",
@@ -125,7 +134,7 @@ const Certifications = () => {
       button: "View",
     },
     {
-      id: 11,
+      id: 12,
       img: Red_Bull,
       title: "On-Premise Sales Job Simulation",
       desc: "RedBull",
@@ -133,7 +142,7 @@ const Certifications = () => {
       button: "View",
     },
     {
-      id: 12,
+      id: 13,
       img: Lululemon,
       title: "Omnichannel Marketing Job Simulation",
       desc: "Lululemon",
@@ -141,7 +150,7 @@ const Certifications = () => {
       button: "View",
     },
     {
-      id: 13,
+      id: 14,
       img: dualFace,
       title:
         "Acceptance letter A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
@@ -150,7 +159,7 @@ const Certifications = () => {
       button: "View",
     },
     {
-      id: 14,
+      id: 15,
       img: Deep_Malware_Detection,
       title:
         "Presentation Explainable Deep Malware Detection in IoT Devices Using CNN-BiLSTM",
@@ -159,20 +168,11 @@ const Certifications = () => {
       button: "View",
     },
     {
-      id: 15,
+      id: 16,
       img: self_Supervised,
       title:
         "Presentation Self-Supervised Representation Learning for Human Activity Recognition Using Inertial Sensor Data",
       desc: "IEEE Photonics Society Bangladesh",
-      year: "2025",
-      button: "View",
-    },
-    {
-      id: 16,
-      img: percipation,
-      title:
-        "Certificate of Participation- MoraleTrack: A Dual-Phase Transformer-Based Framework for Sentiment-Aware Team Morale Forecasting in Agile Project Environments",
-      desc: "IEEE",
       year: "2025",
       button: "View",
     },
