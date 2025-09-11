@@ -61,7 +61,7 @@ const SkillsAndTools = () => {
   ];
 
   return (
-    <div className="py-20 px-2 md:py-[120px] md:px-0">
+    <div className="py-20 px-2 md:py-[120px] md:px-0 xl:px-5">
       <div className="container mx-auto">
         <div className="pb-10 md:pb-[80px] max-xs:pb-6 sm:pb-8">
           <PageHeader

@@ -9,14 +9,14 @@ const Banner = () => {
   return (
     <div className="bg-Bg-Neutral-Primary pb-[120px] max-xs:py-0 max-sm:py-0 lg:pb-[95px] xl:pb-[100px]">
       <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-x-5 lg:gap-x-3 2xl:gap-x-10">
-        <div className="py-5 w-full 2xl:w-[57%] sm:py-10 lg:py-20 lg:w-[50%] px-6 max-xs:py-5 max-xs:px-4 lg:pl-[60px] xl:pl-[90px] 2xl:pl-[100px]">
+        <div className="py-5 w-full xl:w-[57%] sm:py-10 lg:py-20 lg:w-[50%] px-6 max-xs:py-5 max-xs:px-4 lg:pl-[60px] xl:pl-[90px] 2xl:pl-[100px]">
           <h2 className="font-semibold text-[40px] sm:text-[64px] lg:text-[90px] leading-[110%] text-Text-Neutral-Primary lg:text-2xl xl:text-[124px]">
             Hello
           </h2>
           <h3 className="text-3xl font-bold pl-1 text-Text-Neutral-Primary">
             I'm
           </h3>
-          <h1 className="font-semibold text-[40px] sm:text-[64px] lg:text-[80px] leading-[110%] text-Text-Neutral-Primary xl:text-[96px] 2xl:text-[124px]">
+          <h1 className="font-semibold text-[40px] sm:text-[64px] lg:text-[80px] leading-[110%] text-Text-Neutral-Primary xl:text-[96px] 2xl:text-[115px]">
             <ReactTyped
               strings={["Md Al Amin"]}
               typeSpeed={150}
@@ -74,12 +74,12 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-[40%] bg-gradient-to-r from-[rgba(216,212,223,0.05)] to-[rgba(197,230,76,0.50)] rounded-sm pt-11">
+        <div className="w-full lg:w-[41%] bg-gradient-to-r from-[rgba(216,212,223,0.05)] to-[rgba(197,230,76,0.50)] rounded-sm pt-11">
           <div className="pt-5">
             <img
               src={bannerpic}
               alt=""
-              className="pt-[30px] max-sm:pt-[20px] mx-auto pr-18"
+              className="pt-[30px] max-sm:pt-[20px] mx-auto"
             />
           </div>
         </div>
